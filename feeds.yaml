@@ -1,5 +1,4 @@
 feeds:
-  # Yahoo!ニュース
   - name: "Yahoo! 主要"
     category: "主要"
     url: "https://news.yahoo.co.jp/rss/topics/top-picks.xml"
@@ -15,7 +14,7 @@ feeds:
   - name: "Yahoo! 経済"
     category: "経済"
     url: "https://news.yahoo.co.jp/rss/categories/business.xml"
-    
+
   - name: "Yahoo! スポーツ"
     category: "スポーツ"
     url: "https://news.yahoo.co.jp/rss/categories/sports.xml"
@@ -32,7 +31,6 @@ feeds:
     category: "地域"
     url: "https://news.yahoo.co.jp/rss/categories/local.xml"
 
-  # BBC
   - name: "BBC Top"
     category: "BBC Top"
     url: "https://feeds.bbci.co.uk/news/rss.xml"
