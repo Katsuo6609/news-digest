@@ -15,10 +15,6 @@ feeds:
     category: "経済"
     url: "https://news.yahoo.co.jp/rss/categories/business.xml"
 
-  - name: "Yahoo! スポーツ"
-    category: "スポーツ"
-    url: "https://news.yahoo.co.jp/rss/categories/sports.xml"
-
   - name: "Yahoo! IT"
     category: "IT"
     url: "https://news.yahoo.co.jp/rss/categories/it.xml"
