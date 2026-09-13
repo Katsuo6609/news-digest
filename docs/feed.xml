@@ -1,49 +1,360 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <rss version="2.0">
-
 <channel>
-
 <title>News Digest</title>
-
-<link>
-https://Katsuo6609.github.io/news-digest/
-</link>
-
-<description>
-Yahoo!ニュースとBBCの自動ニュース要約
-</description>
-
-<language>ja</language>
-
+<description>Personal News Digest</description>
+<link>./</link>
+<lastBuildDate>Sun, 13 Sep 2026 08:36:48 +0000</lastBuildDate>
 
 <item>
-
-<title>
-2026/09/13 16:21 ニュースまとめ
-</title>
-
-<link>
-https://Katsuo6609.github.io/news-digest/history/2026-09-13-1621.html
-</link>
-
-<guid>
-https://Katsuo6609.github.io/news-digest/history/2026-09-13-1621.html
-</guid>
-
-<pubDate>
-Sun, 13 Sep 2026 07:21:00 +0000
-</pubDate>
-
-<description>
-この時間帯のニュースでは、イチロー氏率いる選抜チームが高校野球女子選抜と対戦し、17奪三振の完封勝利を収めた話題が注目を集めています。また、競馬のセントライト記念では12番人気のジャスティンシカゴが、ローズステークスでは1番人気のモンローウォークがそれぞれ重賞初制覇を果たしました。経済面では、中部電力の社長が浜岡原発の耐震データ不正問題を受けて辞任する意向を固めています。
-</description>
-
+<title>１番人気ゴーイントゥスカイは６着、武豊騎手「次巻き返したい」／セントライト記念(日刊スポーツ)</title>
+<link>https://news.yahoo.co.jp/articles/6f1a2fba23888316bd146edaab528232cabded5d?source=rss</link>
+<guid>https://news.yahoo.co.jp/articles/6f1a2fba23888316bd146edaab528232cabded5d?source=rss</guid>
+<description>＜セントライト記念＞◇13日＝中山◇G2◇芝2200メートル◇3歳◇出走16頭 1番人気に支持されたゴーイントゥスカイは6着に敗れた。上がり最速タイとなる34秒0の末脚を繰り出すも、前をとらえるには</description>
 </item>
 
+<item>
+<title>異例“体重50キロ台力士”が新弟子検査合格…15歳新道帝憲 父が元十両の砂田昌宏ライダーも(日刊スポーツ)</title>
+<link>https://news.yahoo.co.jp/articles/a35d7cc4443f6098b076018c339109828d78f06c?source=rss</link>
+<guid>https://news.yahoo.co.jp/articles/a35d7cc4443f6098b076018c339109828d78f06c?source=rss</guid>
+<description>＜大相撲秋場所＞◇初日◇13日◇東京・両国国技館 日本相撲協会は新弟子検査合格者を発表し、身長165センチ、体重57キロの新道帝憲（15＝高田川）が合格した。 元十両砂浜を父に持つ砂田昌宏ライ</description>
+</item>
 
+<item>
+<title>【速報】京都の「伏見大手筋商店街」が水浸し…近くの道路で水あふれ冠水(MBSニュース)</title>
+<link>https://news.yahoo.co.jp/articles/b84c4d37069a8b3a2285ce0e6583ffe22860539d?source=rss</link>
+<guid>https://news.yahoo.co.jp/articles/b84c4d37069a8b3a2285ce0e6583ffe22860539d?source=rss</guid>
+<description>13日夕方、京都府伏見区の「伏見大手筋商店街」近くの道路で水があふれだし、周辺の道路が水浸しになっています。 13日午後4時前、京都市伏見区東大手町の伏見大手筋商店街近くの道路で「道路が陥没して水が</description>
+</item>
 
+<item>
+<title>全国への切符をかけ… 全日本U―12サッカー選手権大会石川県大会開会式(テレビ金沢)</title>
+<link>https://news.yahoo.co.jp/articles/3bccc4ea2c4fed06601d1ce86b2a9a9884cfc56f?source=rss</link>
+<guid>https://news.yahoo.co.jp/articles/3bccc4ea2c4fed06601d1ce86b2a9a9884cfc56f?source=rss</guid>
+<description>少年サッカーの頂点を決めるJFA第50回全日本U―12サッカー選手権大会の県大会開会式と抽選会が12日に白山市で行われました。 開会式には小学生にあたるUー12世代、62チームのキャプテンが参加。</description>
+</item>
+
+<item>
+<title>中日・ボスラーが3日以来の「4番・一塁」でスタメン 再昇格以来、安定感抜群の高橋宏斗が先発マウンド(中日スポーツ)</title>
+<link>https://news.yahoo.co.jp/articles/61949deca8e1c89c2c3a9a78f536ff8ac62882f6?source=rss</link>
+<guid>https://news.yahoo.co.jp/articles/61949deca8e1c89c2c3a9a78f536ff8ac62882f6?source=rss</guid>
+<description>◇１３日 阪神―中日（甲子園） 両チームのスターティングメンバーが発表された。中日はジェイソン・ボスラー外野手が、３日の広島戦（バンテリンドームナゴヤ）以来の「４番・一塁」に入った。 先発は高</description>
+</item>
+
+<item>
+<title>【阪神】連敗ストップへ近本光司、中野拓夢の１、２番復活 先発メンバー発表(日刊スポーツ)</title>
+<link>https://news.yahoo.co.jp/articles/22178589a47b8181ecd6703070a3c76aac441dbe?source=rss</link>
+<guid>https://news.yahoo.co.jp/articles/22178589a47b8181ecd6703070a3c76aac441dbe?source=rss</guid>
+<description>＜阪神－中日＞◇13日◇甲子園 阪神の先発メンバーが発表された。シーズン最終盤で4連敗し、2位巨人に0・5ゲーム差に迫られて迎える中日戦で、近本光司外野手（31）、中野拓夢内野手（30）の1、2番</description>
+</item>
+
+<item>
+<title>【徳山ボート・G1】2日目ドリーム戦は池田浩二が白星 黒井達矢は連勝で得点大きく加算する(中日スポーツ)</title>
+<link>https://news.yahoo.co.jp/articles/35908ce721d5f5b42e6a1eecac49b0fb7e827c73?source=rss</link>
+<guid>https://news.yahoo.co.jp/articles/35908ce721d5f5b42e6a1eecac49b0fb7e827c73?source=rss</guid>
+<description>◇13日 ダイヤモンドカップ（G1・徳山ボート） 予選2日目が終了した。全艇ゼロ台スリットとなった12Rドリーム戦は、トップスタートを決めた1号艇の池田浩二が1着。石野貴之が2着に入った。 初</description>
+</item>
+
+<item>
+<title>「社員の姿勢が変われば、企業が変わる」 整体師・植屋浩幸さんが広める姿勢経営 大切なのは〝数字〟より〝あり方〟(週刊大阪日日新聞)</title>
+<link>https://news.yahoo.co.jp/articles/2ad091fccbf10c7499b72d6b0d28533b1f100e60?source=rss</link>
+<guid>https://news.yahoo.co.jp/articles/2ad091fccbf10c7499b72d6b0d28533b1f100e60?source=rss</guid>
+<description>「会社にも、いい姿勢と悪い姿勢があると思うんです」 そう語るのは、枚方市で「整体院スリーバランス」を営み、20年以上も人の体と向き合ってきた植屋浩幸さん。8月25日には3冊目となる著書「企業の傾きは</description>
+</item>
+
+<item>
+<title>高田延彦氏、かつて死闘を繰り広げたヒクソン・グレイシーから柔術黒帯授与 ４年前から師弟関係(日刊スポーツ)</title>
+<link>https://news.yahoo.co.jp/articles/7f42168bb26688d1782538a329b86f54e536656c?source=rss</link>
+<guid>https://news.yahoo.co.jp/articles/7f42168bb26688d1782538a329b86f54e536656c?source=rss</guid>
+<description>新日本プロレスやUWFインターナショナルなどで活躍した元プロレスラー、格闘家で、現在はタレントとして活動する高田延彦氏（64）が米フロリダ州ベロビーチで、2度の死闘を繰り広げたヒクソン・グレイシー（</description>
+</item>
+
+<item>
+<title>フェルスタッペン予選3番手「ポールに近づけて満足。マシンのセットアップをうまく改善できた」(オートスポーツweb)</title>
+<link>https://news.yahoo.co.jp/articles/a06c53c8f65d9a3e0fb1a04842a4edd010a8f856?source=rss</link>
+<guid>https://news.yahoo.co.jp/articles/a06c53c8f65d9a3e0fb1a04842a4edd010a8f856?source=rss</guid>
+<description>2026年F1スペインGPの予選で、レッドブルのマックス・フェルスタッペンは3番手を獲得した。ランド・ノリス（マクラーレン）のポールポジションタイムとの差は0.140秒だった。 フェルスタッペン</description>
+</item>
+
+<item>
+<title>石川・小松市に手作りのかかしが並ぶ「かかしロード」(テレビ金沢)</title>
+<link>https://news.yahoo.co.jp/articles/ae56a8f7736bd5e33d4123f84ef33c20d6728f0a?source=rss</link>
+<guid>https://news.yahoo.co.jp/articles/ae56a8f7736bd5e33d4123f84ef33c20d6728f0a?source=rss</guid>
+<description>趣向を凝らした手作りのかかしが並ぶ「かかしロード」が、小松市内に設けられ、個性的な作品が訪れる人たちを楽しませています。 県内は、日が差す時間もあり各地で30℃を越えましたが、時折雨が降るなど不安定</description>
+</item>
+
+<item>
+<title>【日本ハム】中島卓也「鎌ケ谷はプロ野球選手としての原点」引退セレモニーで感謝のスピーチ(日刊スポーツ)</title>
+<link>https://news.yahoo.co.jp/articles/ac6c5d2c57baacaa4107263b8501d240ed2d61ff?source=rss</link>
+<guid>https://news.yahoo.co.jp/articles/ac6c5d2c57baacaa4107263b8501d240ed2d61ff?source=rss</guid>
+<description>＜ファーム・リーグ：日本ハム9－0ロッテ＞◇13日◇鎌ケ谷スタジアム 今季限りで現役引退を発表した日本ハム中島卓也内野手（35）の引退セレモニーが13日、千葉・鎌ケ谷スタジアムで行われた。「2番遊</description>
+</item>
+
+<item>
+<title>14日の予告先発(共同通信)</title>
+<link>https://news.yahoo.co.jp/articles/df2d45814d5da68171af26d7b354ff099ce516e5?source=rss</link>
+<guid>https://news.yahoo.co.jp/articles/df2d45814d5da68171af26d7b354ff099ce516e5?source=rss</guid>
+<description>◇セ・リーグ ヤクルト・増居―広島・玉村（神宮） DeNA・平良―巨人・西舘（横浜） 阪神・伊藤将―中日・マラー（甲子園）</description>
+</item>
+
+<item>
+<title>【阪神】伊藤将司が１４日の中日戦先発 悪天候のため３日以来の登板「試合に勝てるようなピッチングができれば」(スポーツ報知)</title>
+<link>https://news.yahoo.co.jp/articles/3f2f5030ea83582e5055daeb65119488dd4ecc93?source=rss</link>
+<guid>https://news.yahoo.co.jp/articles/3f2f5030ea83582e5055daeb65119488dd4ecc93?source=rss</guid>
+<description>阪神・伊藤将司投手が、１４日の中日戦（甲子園）に先発する。 ８日からの広島３連戦（甲子園）で先発予定だったが、悪天候のため２試合が中止となり、登板機会はなかった。９月３日のヤクルト戦（神宮）以来</description>
+</item>
+
+<item>
+<title>朝翠龍が新入幕白星発進、兄朝紅龍と初めて力水つけ合う「好スタートが切れた」と喜び(日刊スポーツ)</title>
+<link>https://news.yahoo.co.jp/articles/50c13bd8040947c14449163d8c3582ad04c126f2?source=rss</link>
+<guid>https://news.yahoo.co.jp/articles/50c13bd8040947c14449163d8c3582ad04c126f2?source=rss</guid>
+<description>＜大相撲秋場所＞◇初日◇13日◇東京・両国国技館 東前頭15枚目の朝翠龍（26＝高砂）が、西前頭14枚目の千代翔馬（35＝九重）を寄り切り、新入幕の場所を白星で滑り出した。 2度目の立ち合いで</description>
+</item>
+
+<item>
+<title>重要鉱物の武器化は進歩妨げるとインド首相(共同通信)</title>
+<link>https://news.yahoo.co.jp/articles/39b400ce744b79cceb7ebc79be4d22fabe331413?source=rss</link>
+<guid>https://news.yahoo.co.jp/articles/39b400ce744b79cceb7ebc79be4d22fabe331413?source=rss</guid>
+<description>【ニューデリー共同】インドのモディ首相は13日のBRICS首脳会議で「技術や重要鉱物の武器化は共通の進歩を妨げる恐れがある」と述べた。重要鉱物の輸出規制をする中国をけん制したとみられる。</description>
+</item>
+
+<item>
+<title>青木真也がRIZINから帰還「胸を張って帰ってきました」 11月3日のザック戦は「え？ 朝倉未来のパンチで忘れちゃった」【DDT】(TOKYO HEADLINE WEB)</title>
+<link>https://news.yahoo.co.jp/articles/5b06f542a69928acbca1b99e2e7089ff71af2c82?source=rss</link>
+<guid>https://news.yahoo.co.jp/articles/5b06f542a69928acbca1b99e2e7089ff71af2c82?source=rss</guid>
+<description>「超RIZIN,5」（9月10日）で朝倉未来にTKO負けを喫した総合格闘家でプロレスラーの青木真也が9月13日、主戦場とするDDTに帰還を果たした。 この日、DDTは東京・後楽園ホールで「上野勇希</description>
+</item>
+
+<item>
+<title>DeNA・エンカーナシオン コンディション回復で5試合ぶりベンチ入り 相川監督「代打待機で」(スポニチアネックス)</title>
+<link>https://news.yahoo.co.jp/articles/62487433f28fc04a6522fc2eecdf06e95280d083?source=rss</link>
+<guid>https://news.yahoo.co.jp/articles/62487433f28fc04a6522fc2eecdf06e95280d083?source=rss</guid>
+<description>◇セ・リーグ DeNA ー 巨人（2026年9月13日 横浜） コンディション不良を理由に欠場が続いていたDeNAのヘラル・エンカーナシオン外野手（28）が、13日の巨人戦で5試合ぶりにベンチ入</description>
+</item>
+
+<item>
+<title>阪神伊藤将司－中日マラー、DeNA平良拳太郎－巨人西舘勇陽ほか／14日予告先発(日刊スポーツ)</title>
+<link>https://news.yahoo.co.jp/articles/cdc6bd13042df29c24415044a7e5070eb963f814?source=rss</link>
+<guid>https://news.yahoo.co.jp/articles/cdc6bd13042df29c24415044a7e5070eb963f814?source=rss</guid>
+<description>14日のプロ野球予告先発は以下の通り。 ＜セ・リーグ＞ ヤクルト増居翔太－広島玉村昇悟（神宮＝18時） DeNA平良拳太郎－巨人西舘勇陽（横浜＝18時） 阪神伊藤将司－中日K・マラー</description>
+</item>
+
+<item>
+<title>【第九管区海上保安本部】ヘリコプターのネジ1本が脱落 12日新潟から富山・石川へ向かったフライトで落下か(TeNYテレビ新潟)</title>
+<link>https://news.yahoo.co.jp/articles/81c5d948120fe632fe8f50fa9c91776437554d55?source=rss</link>
+<guid>https://news.yahoo.co.jp/articles/81c5d948120fe632fe8f50fa9c91776437554d55?source=rss</guid>
+<description>第九管区海上保安本部は13日、所属のヘリコプターのネジ1本の脱落が確認されたと発表しました。12日の新潟空港から富山県や石川県へ向かったフライトで、落下した可能性があるということです。 ネジの脱落が</description>
+</item>
+
+<item>
+<title>【ローズS】3馬身離されても2着で秋華賞の権利は確保したエンネ 坂井騎手「次のことを考えて勝ち馬をマーク」も「勝ち馬が強すぎた」(中日スポーツ)</title>
+<link>https://news.yahoo.co.jp/articles/1fc17b6a474e835a3f2d637142e5f1ae091d70f5?source=rss</link>
+<guid>https://news.yahoo.co.jp/articles/1fc17b6a474e835a3f2d637142e5f1ae091d70f5?source=rss</guid>
+<description>◇13日 第44回ローズS（G2・阪神・芝1800メートル） 先行する各馬を前に見ながら4～5番手に収まった3番人気のエンネ。直線に入って抜け出したモンローウォークをターゲットに脚を伸ばしたが、3</description>
+</item>
+
+<item>
+<title>「先の見えない不安に寄り添って」熊本地震の被災地へ日赤広島支部から救護班が出発(HOME広島ホームテレビ)</title>
+<link>https://news.yahoo.co.jp/articles/c185f1b46cb00278f86adfe42e658d74945a5b35?source=rss</link>
+<guid>https://news.yahoo.co.jp/articles/c185f1b46cb00278f86adfe42e658d74945a5b35?source=rss</guid>
+<description>熊本地震の被災地で医療支援を行うため、日本赤十字社の医師や看護師らが出発しました。 日本赤十字社の広島県支部から派遣されたのは、医師や看護師、薬剤師らあわせて7人です。7人は熊本市や宇城市などの避難</description>
+</item>
+
+<item>
+<title>AIで効率よく働けば幸せになれる？→哲学者の答えにぐうの音も出ない(ダイヤモンド・オンライン)</title>
+<link>https://news.yahoo.co.jp/articles/b04e5125212c10c6c1abc95b800b2f5c2dd91cc1?source=rss</link>
+<guid>https://news.yahoo.co.jp/articles/b04e5125212c10c6c1abc95b800b2f5c2dd91cc1?source=rss</guid>
+<description>仕事では、速く、正確に、同じ品質で仕上げることが求められる。そのための便利な道具は増え続けている。効率化の先で、私たちは何を失うのかを考える。※本稿は、現象学者の村上靖彦『生き延びるための会話 他者</description>
+</item>
+
+<item>
+<title>【マリーゴールド】岩谷麻優がリーグ戦初黒星 ＣＨＩＡＫＩのダイビングギロチンに轟沈(東スポWEB)</title>
+<link>https://news.yahoo.co.jp/articles/bb0b3969359ba374542148b3e7c0ec2144a57a81?source=rss</link>
+<guid>https://news.yahoo.co.jp/articles/bb0b3969359ba374542148b3e7c0ec2144a57a81?source=rss</guid>
+<description>女子プロレス「マリーゴールド」13日荒川大会の「DREAM STAR GP 2026」リーグB公式戦で岩谷麻優（33）が、CHIAKI（31）にリーグ戦初敗北を喫した。 ここまで3戦を終え無敗で</description>
+</item>
+
+<item>
+<title>プレミア開幕4試合で9失点 チェルシーは守備が崩壊中「攻守の切り替えがめちゃくちゃ」(theWORLD（ザ・ワールドWeb）)</title>
+<link>https://news.yahoo.co.jp/articles/910c7cda74fa4f9469440263827fe02a77aac780?source=rss</link>
+<guid>https://news.yahoo.co.jp/articles/910c7cda74fa4f9469440263827fe02a77aac780?source=rss</guid>
+<description>プレミアリーグ第4節チェルシー対ハル・シティの一戦は2-2のドローに終わった。 7分、先制したのはチェルシーだ。ロングカウンターからモーガン・ロジャーズが今季3ゴール目となる得点を挙げ、チームに勢い</description>
+</item>
+
+<item>
+<title>【セントライト記念】2番人気サヴォアフェールが2着 松山騎手「いいところに出せたのですが、あと少しでした」(サンケイスポーツ)</title>
+<link>https://news.yahoo.co.jp/articles/a08abf638759f3b3a643da8cfb8566b1bc49bb29?source=rss</link>
+<guid>https://news.yahoo.co.jp/articles/a08abf638759f3b3a643da8cfb8566b1bc49bb29?source=rss</guid>
+<description>2番人気のサヴォアフェールが2着。内をロスなく回った勝ち馬にこそ及ばなかったが、好位追走から直線では外から先頭に躍り出ようかという脚だった。連勝の勢いそのままに、菊の舞台への優先出走権を獲得した。「い</description>
+</item>
+
+<item>
+<title>高校で長年活躍したピアノが生徒の手でアートピアノに 香川(KSB瀬戸内海放送)</title>
+<link>https://news.yahoo.co.jp/articles/806c419ade2f38bb0f3bf3dd677f454e9964aa63?source=rss</link>
+<guid>https://news.yahoo.co.jp/articles/806c419ade2f38bb0f3bf3dd677f454e9964aa63?source=rss</guid>
+<description>高松市の高校で長年使用されてきたピアノが「アートピアノ」に生まれ変わりました。</description>
+</item>
+
+<item>
+<title>スズキは軽自動車だけにあらず！ じつは得意な普通車の「隠れた名車」4台(WEB CARTOP)</title>
+<link>https://news.yahoo.co.jp/articles/f144bbdee2b26f23f2ae968a0c5101d6ab4bec7a?source=rss</link>
+<guid>https://news.yahoo.co.jp/articles/f144bbdee2b26f23f2ae968a0c5101d6ab4bec7a?source=rss</guid>
+<description>スズキというと軽自動車を得意とするメーカーというイメージが強いだろう。実際スズキの軽自動車はジムニーやアルト、ワゴンRなど、日本の自動車史に名を刻む名車が多いという事実もある。ただ、普通車にも現在も</description>
+</item>
+
+<item>
+<title>武知海青がついにヨシヒコと対戦。顔面への無慈悲なフットスタンプにブーイング。今後のシングル対決は「LDHに相談します」【DDT】(TOKYO HEADLINE WEB)</title>
+<link>https://news.yahoo.co.jp/articles/d962a1ae983561913d76d3200a74527eb619b938?source=rss</link>
+<guid>https://news.yahoo.co.jp/articles/d962a1ae983561913d76d3200a74527eb619b938?source=rss</guid>
+<description>LDH JAPANのダンス＆ボーカルグループ「THE RAMPAGE」のメンバーでDDTプロレス所属のプロレスラー、武知海青が「上野勇希デビュー10周年記念興行-IN MY MIND “10”-」（</description>
+</item>
+
+<item>
+<title>【Ｕ―１８】エース織田が登板不可の試練 決勝・日韓戦の投手起用は？１５６キロ左腕らが中心か 岡田監督「目先を変えながら」…前回対戦は４人連続左腕起用で逆転負け(スポーツ報知)</title>
+<link>https://news.yahoo.co.jp/articles/790747580ef91f9339d5ac8cca5a5e3fe082aee5?source=rss</link>
+<guid>https://news.yahoo.co.jp/articles/790747580ef91f9339d5ac8cca5a5e3fe082aee5?source=rss</guid>
+<description>◆第１４回Ｕ―１８アジア選手権▽決勝 韓国―日本（１３日・台湾、台北ドーム） 高校野球日本代表は、２０１６年以来１０年ぶりとなるアジア制覇を懸けて韓国との決勝戦（日本時間午後７時半開始）に臨む。日</description>
+</item>
+
+<item>
+<title>今売れている「トラックボール」おすすめ＆ランキング【2026年9月版】(Fav-Log by ITmedia)</title>
+<link>https://news.yahoo.co.jp/articles/4592b2ec3c09eadf94f3a7399b16e17dce890146?source=rss</link>
+<guid>https://news.yahoo.co.jp/articles/4592b2ec3c09eadf94f3a7399b16e17dce890146?source=rss</guid>
+<description>「トラックボール」は、マウスとはまた違ったメリットのあるポインティングデバイスです。手首を動かす必要が無いため、手首の疲労を軽減してくれるほか、デスクの限られたスペースでも操作できます。膝の上や寝な</description>
+</item>
+
+<item>
+<title>「ナイスバーディ！」ターゲット・バードゴルフ 約120人がプレー 関東甲信越王者も 山梨県体育祭り(YBS山梨放送)</title>
+<link>https://news.yahoo.co.jp/articles/5eacfdc0c67cfd8d7a14c697cd8b2335e9efcd42?source=rss</link>
+<guid>https://news.yahoo.co.jp/articles/5eacfdc0c67cfd8d7a14c697cd8b2335e9efcd42?source=rss</guid>
+<description>◇第79回山梨県体育祭り ターゲット・バードゴルフ競技(13日、甲府市・大津ターゲットバードゴルフ場) 12日に総合開会式が行われ、県内各地で44競技が実施される県体育祭り。 13日にはターゲット</description>
+</item>
+
+<item>
+<title>ハミルトン、4番手に終わった予選に「ポールは近くなかった……」決勝はデグラデーションに望み(motorsport.com 日本版)</title>
+<link>https://news.yahoo.co.jp/articles/95e58740bfd7a99f966cb95822b3bcdad42ded57?source=rss</link>
+<guid>https://news.yahoo.co.jp/articles/95e58740bfd7a99f966cb95822b3bcdad42ded57?source=rss</guid>
+<description>F1スペインGPの予選で、フェラーリはルイス・ハミルトンが4番手、シャルル・ルクレールが5番手となった。この結果から、ふたつの側面が読み取れる。 ひとつは、現実的に考えればフェラーリにはこれ以上</description>
+</item>
+
+<item>
+<title>桜島が噴火 噴煙の高さ火口から2400メートル(MBC南日本放送)</title>
+<link>https://news.yahoo.co.jp/articles/c387bc5d8549bbb4f4c47f9acd7b10a5870a5756?source=rss</link>
+<guid>https://news.yahoo.co.jp/articles/c387bc5d8549bbb4f4c47f9acd7b10a5870a5756?source=rss</guid>
+<description>桜島の南岳はきょう13日午後5時10分に噴火し、噴煙が火口から2400メートル上空まで上がりました。 噴煙の量はやや多量で、北西方向に流れています。 ◆桜島の降灰予報</description>
+</item>
+
+<item>
+<title>「20年冷や飯食って狂い咲き、いつまで続く狂い咲き」赤沢経済産業相「力の限り頑張りたい」 内閣改造を前に講演 鳥取県米子市(日本海テレビ)</title>
+<link>https://news.yahoo.co.jp/articles/fbb5f4c909fdf6434b75a5fdfb2d5e0a9ccd5000?source=rss</link>
+<guid>https://news.yahoo.co.jp/articles/fbb5f4c909fdf6434b75a5fdfb2d5e0a9ccd5000?source=rss</guid>
+<description>赤沢経済産業相は9月13日、地元の会合に出席し、現在の役職である経済産業省のトップとして「力の限り頑張っていきたい」と述べました。 9月17日にも高市総理大臣によって行われるとみられる内閣改造。</description>
+</item>
+
+<item>
+<title>大関昇進を目指す熱海富士が好スタート 豪ノ山に勝利 今場所１２勝ならば、昇進の目安に到達(スポーツ報知)</title>
+<link>https://news.yahoo.co.jp/articles/602f2de4fdc3d1567d7323ac64103e031e68308a?source=rss</link>
+<guid>https://news.yahoo.co.jp/articles/602f2de4fdc3d1567d7323ac64103e031e68308a?source=rss</guid>
+<description>◆大相撲秋場所初日（１３日・両国国技館） 大関昇進を目指す関脇・熱海富士（伊勢ケ浜）は、東前頭３枚目・豪ノ山（武隈）に勝ち、好スタートを切った。過去５勝３敗の相手を下した。 熱海富士は先場所、</description>
+</item>
+
+<item>
+<title>ロッテ3連敗で借金8…サブロー監督「先発ピッチャーに尽きる。典型的な負けパターン」(スポニチアネックス)</title>
+<link>https://news.yahoo.co.jp/articles/6964c18725f546a8e7c34e80fb641a5f7af65d77?source=rss</link>
+<guid>https://news.yahoo.co.jp/articles/6964c18725f546a8e7c34e80fb641a5f7af65d77?source=rss</guid>
+<description>◇パ・リーグ ロッテ4―7ソフトバンク（2026年9月13日 みずほペイペイD） ロッテは先発のルケーシー投手（33）が4回を6安打5失点と誤算だった。打線は3回に押し出し四球で1点を先制し、1</description>
+</item>
+
+<item>
+<title>車ドア開き衝突 転倒後ひかれ死亡</title>
+<link>https://news.yahoo.co.jp/pickup/6595167?source=rss</link>
+<guid>https://news.yahoo.co.jp/pickup/6595167?source=rss</guid>
+<description>車ドア開き衝突 転倒後ひかれ死亡</description>
+</item>
+
+<item>
+<title>岸和田、阿武野、大冠、関西大倉などが選手権大阪1次予選突破(高校サッカードットコム)</title>
+<link>https://news.yahoo.co.jp/articles/1d2fc6999261bcc539b1c2d87293cd1dbe229aec?source=rss</link>
+<guid>https://news.yahoo.co.jp/articles/1d2fc6999261bcc539b1c2d87293cd1dbe229aec?source=rss</guid>
+<description>9月13日、第105回全国高校サッカー選手権大阪予選の1次予選2回戦が府内の各会場で行われた。 追手門大手前と対戦した岸和田は2-0で勝った。枚方津田はいちりつに3-2で競り勝った。香里丘と茨木</description>
+</item>
+
+<item>
+<title>ベスト16出揃う！甲府昭和が4点差をはね返し、シード校に逆転勝利！秋季山梨県大会【26年秋高校野球】(高校野球ドットコム)</title>
+<link>https://news.yahoo.co.jp/articles/25204159460cd8dd518d20721c4f19a85d367005?source=rss</link>
+<guid>https://news.yahoo.co.jp/articles/25204159460cd8dd518d20721c4f19a85d367005?source=rss</guid>
+<description>2026年第79回秋季関東地区高校野球山梨県大会は13日、1回戦が行われ、ベスト16が出揃った。 甲府昭和が9対8でシードの甲府商に逆転勝ちした。4回に一挙7点を失うなど、4対8とリードを許したが</description>
+</item>
+
+<item>
+<title>熱海駅近くの住宅地で土砂崩れ 付近の３世帯と３事業所に避難指示 解除の見通し立たず（静岡）(Daiichi-TV（静岡第一テレビ）)</title>
+<link>https://news.yahoo.co.jp/articles/f1d0c367b8e728144e23fb0039193225fa5ba50d?source=rss</link>
+<guid>https://news.yahoo.co.jp/articles/f1d0c367b8e728144e23fb0039193225fa5ba50d?source=rss</guid>
+<description>こちらは、熱海駅近くの熱海市春日町内の住宅地で発生した土砂崩れの現場です。 今月10日に、付近の住民から市に通報があったもので、幅およそ15メートル高さ およそ 7メートルにわたって崩れ、土砂の一部</description>
+</item>
+
+<item>
+<title>【津ボート】山田祐也と松井洪弥がポイント争いをリード(中日スポーツ)</title>
+<link>https://news.yahoo.co.jp/articles/1ddbe0d1d0934e18e2769d47301843ab5a05bd5a?source=rss</link>
+<guid>https://news.yahoo.co.jp/articles/1ddbe0d1d0934e18e2769d47301843ab5a05bd5a?source=rss</guid>
+<description>◇13日 にっぽん未来プロジェクト競走in津（津ボート） ホーム追い風が強まった2日目9R以降は安定板を装着、本番レース2周戦で展開した。初日はドリーム戦を含め3着を並べた山田祐也がこの日連勝。3</description>
+</item>
+
+<item>
+<title>【注目馬動向】ジョドレルバンクの芙蓉Ｓ鞍上はレーン騎手から戸崎圭太騎手に変更 社台グループオーナーズが発表(馬トク報知)</title>
+<link>https://news.yahoo.co.jp/articles/ecbb4d3195fc1249af3bce6750f6a25078ebd17a?source=rss</link>
+<guid>https://news.yahoo.co.jp/articles/ecbb4d3195fc1249af3bce6750f6a25078ebd17a?source=rss</guid>
+<description>６月の新馬戦を快勝したジョドレルバンク（牡２歳、美浦・武井亮厩舎、父エフフォーリア）は、次走の芙蓉Ｓ（９月２６日、中山競馬場・芝２０００メートル）で戸崎圭太騎手＝美浦・田島俊明厩舎＝と新コンビを組む</description>
+</item>
+
+<item>
+<title>丸いかたちの「車田」で稲刈り 岐阜・高山市(CBCテレビ)</title>
+<link>https://news.yahoo.co.jp/articles/3526fcf9c32cda4a332ec9f197504f666d67e9b2?source=rss</link>
+<guid>https://news.yahoo.co.jp/articles/3526fcf9c32cda4a332ec9f197504f666d67e9b2?source=rss</guid>
+<description>岐阜県高山市で丸い形の田んぼ、「車田」での稲刈りが行われました。 車田は、丸い形の田んぼに、乗り物の車輪のように稲を植えたものです。 かつては伊勢神宮に供える米を作る神聖な田んぼだったとされ、今では</description>
+</item>
+
+<item>
+<title>イチロー氏、驚きの“抜擢”に「すげぇ」 涙の女子高生に託した未来「もらい泣きした」(Full-Count)</title>
+<link>https://news.yahoo.co.jp/articles/11b49b0aad761880ae1b4881c3b2b313c4b476a8?source=rss</link>
+<guid>https://news.yahoo.co.jp/articles/11b49b0aad761880ae1b4881c3b2b313c4b476a8?source=rss</guid>
+<description>女子野球の新たな“スター”になるかもしれない。「SATO presents 高校野球女子選抜 vs イチロー選抜 KOBE CHIBEN」が13日、東京ドームで行われ、イチロー選抜が7-0で勝利。敗</description>
+</item>
+
+<item>
+<title>DeNA・エンカーナシオンが5試合ぶりにベンチ入り 相川監督は「状態を見ながら。代打待機でしばらくやってもらおうかな」と説明(サンケイスポーツ)</title>
+<link>https://news.yahoo.co.jp/articles/0465f623550614b4e80a2b95c48ac0280c77779b?source=rss</link>
+<guid>https://news.yahoo.co.jp/articles/0465f623550614b4e80a2b95c48ac0280c77779b?source=rss</guid>
+<description>（セ・リーグ、DeNA－巨人、22回戦、13日、横浜）DeNAのヘラル・エンカーナシオン外野手（28）が5試合ぶりにベンチ入りした。4番で先発した8日の試合でコンディション不良を訴え、9日に病院で検査</description>
+</item>
+
+<item>
+<title>阪神 14日の中日戦予告先発の伊藤将司「大事な試合をしっかり勝ち切る投球を」(スポニチアネックス)</title>
+<link>https://news.yahoo.co.jp/articles/b72e6ccb1de71d41580540ce7fb3bb610cb26dae?source=rss</link>
+<guid>https://news.yahoo.co.jp/articles/b72e6ccb1de71d41580540ce7fb3bb610cb26dae?source=rss</guid>
+<description>優勝争いが激化する中、伊藤将司投手（30）が14日の中日戦（甲子園）で予告先発する。「その1試合がすごく大事になってくると思う。試合をしっかり勝ちきれるような投球ができたらいい」と勝利への貢献を誓っ</description>
+</item>
+
+<item>
+<title>里山で秋の味覚「栗」拾い 収穫体験９月下旬まで 宮城・石巻市「あかま里山農園」(khb東日本放送)</title>
+<link>https://news.yahoo.co.jp/articles/de2b6fff7e624197da224070a68e18e863ee0b0a?source=rss</link>
+<guid>https://news.yahoo.co.jp/articles/de2b6fff7e624197da224070a68e18e863ee0b0a?source=rss</guid>
+<description>サンデーチャージ＆スポーツ１３日の中継は、宮城県石巻市飯野地区の「あかま里山農園」からお届けしました。</description>
+</item>
+
+<item>
+<title>リバプール指揮官 出場機会のない遠藤航の起用について言及「まだベストの状態ではない」、今後は「ワタ（遠藤）は私のお気に入り。きっと出場機会は巡ってくる」(スポーツ報知)</title>
+<link>https://news.yahoo.co.jp/articles/c59ce65f3f1068c440d875f8aa7c1d458f3ce187?source=rss</link>
+<guid>https://news.yahoo.co.jp/articles/c59ce65f3f1068c440d875f8aa7c1d458f3ce187?source=rss</guid>
+<description>◆プレミアリーグ 第４節 リバプール０－０フラム（１２日・リバプール・アンフィールド） イングランド・プレミアリーグの第４節が１２日、７試合行われ、元日本代表主将遠藤航（３３）が所属するリバプール</description>
+</item>
+
+<item>
+<title>【ＤｅＮＡ】エンカーナシオンが５試合ぶりにベンチ入り スタメンは回避も相川亮二監督は代打起用を示唆(スポーツ報知)</title>
+<link>https://news.yahoo.co.jp/articles/8a96edfd83d7fc28bc43fcfbd33004b2f8a92d73?source=rss</link>
+<guid>https://news.yahoo.co.jp/articles/8a96edfd83d7fc28bc43fcfbd33004b2f8a92d73?source=rss</guid>
+<description>◆ＪＥＲＡセ・リーグ ＤｅＮＡ―巨人（１３日・横浜） コンディション不良のため、９日のヤクルト戦（横浜）から４試合連続で欠場していたＤｅＮＡのヘラル・エンカーナシオン外野手が、５試合ぶりにベンチ入</description>
+</item>
 
 </channel>
-
 </rss>
