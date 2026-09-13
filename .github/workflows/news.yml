@@ -1,0 +1,50 @@
+name: News Digest
+
+on:
+  # 手動実行用
+  workflow_dispatch:
+
+  # 日本時間 8:07 / 12:07 / 20:07
+  schedule:
+    - cron: "7 8,12,20 * * *"
+      timezone: "Asia/Tokyo"
+
+permissions:
+  contents: write
+
+jobs:
+  generate-news:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Generate news digest
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python main.py
+
+      - name: Save generated files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add -A
+
+          if git diff --cached --quiet; then
+            echo "No changes to save."
+            exit 0
+          fi
+
+          git commit -m "Update news digest"
+          git push
