@@ -15,11 +15,7 @@ feeds:
   - name: "Yahoo! 経済"
     category: "経済"
     url: "https://news.yahoo.co.jp/rss/categories/business.xml"
-
-  - name: "Yahoo! エンタメ"
-    category: "エンタメ"
-    url: "https://news.yahoo.co.jp/rss/categories/entertainment.xml"
-
+    
   - name: "Yahoo! スポーツ"
     category: "スポーツ"
     url: "https://news.yahoo.co.jp/rss/categories/sports.xml"
@@ -31,10 +27,6 @@ feeds:
   - name: "Yahoo! 科学"
     category: "科学"
     url: "https://news.yahoo.co.jp/rss/categories/science.xml"
-
-  - name: "Yahoo! ライフ"
-    category: "ライフ"
-    url: "https://news.yahoo.co.jp/rss/categories/life.xml"
 
   - name: "Yahoo! 地域"
     category: "地域"
