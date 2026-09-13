@@ -17,7 +17,7 @@ from google.genai import types
 JST = timezone(timedelta(hours=9))
 
 # Gemini無料Tierを使用
-MODEL = "gemini-3.8-flash"
+MODEL = "gemini-3.5-flash"
 
 # 1回にAIへ送る記事数の絶対上限
 MAX_ARTICLES_PER_RUN = 120
