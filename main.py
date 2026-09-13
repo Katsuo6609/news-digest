@@ -26,7 +26,7 @@ SEEN_KEEP_DAYS = 14
 MAX_ARTICLES_PER_RUN = 120
 
 CATEGORY_ORDER = [
-    "主要", "国内", "国際", "経済", "IT", "科学", "スポーツ", "地域",
+    "主要", "国内", "国際", "経済", "IT", "科学", "地域",
     "BBC Top", "BBC World", "BBC Business",
 ]
 
