@@ -1,0 +1,54 @@
+feeds:
+  # Yahoo!ニュース
+  - name: "Yahoo! 主要"
+    category: "主要"
+    url: "https://news.yahoo.co.jp/rss/topics/top-picks.xml"
+
+  - name: "Yahoo! 国内"
+    category: "国内"
+    url: "https://news.yahoo.co.jp/rss/categories/domestic.xml"
+
+  - name: "Yahoo! 国際"
+    category: "国際"
+    url: "https://news.yahoo.co.jp/rss/categories/world.xml"
+
+  - name: "Yahoo! 経済"
+    category: "経済"
+    url: "https://news.yahoo.co.jp/rss/categories/business.xml"
+
+  - name: "Yahoo! エンタメ"
+    category: "エンタメ"
+    url: "https://news.yahoo.co.jp/rss/categories/entertainment.xml"
+
+  - name: "Yahoo! スポーツ"
+    category: "スポーツ"
+    url: "https://news.yahoo.co.jp/rss/categories/sports.xml"
+
+  - name: "Yahoo! IT"
+    category: "IT"
+    url: "https://news.yahoo.co.jp/rss/categories/it.xml"
+
+  - name: "Yahoo! 科学"
+    category: "科学"
+    url: "https://news.yahoo.co.jp/rss/categories/science.xml"
+
+  - name: "Yahoo! ライフ"
+    category: "ライフ"
+    url: "https://news.yahoo.co.jp/rss/categories/life.xml"
+
+  - name: "Yahoo! 地域"
+    category: "地域"
+    url: "https://news.yahoo.co.jp/rss/categories/local.xml"
+
+  # BBC
+  - name: "BBC Top"
+    category: "BBC Top"
+    url: "https://feeds.bbci.co.uk/news/rss.xml"
+
+  - name: "BBC World"
+    category: "BBC World"
+    url: "https://feeds.bbci.co.uk/news/world/rss.xml"
+
+  - name: "BBC Business"
+    category: "BBC Business"
+    url: "https://feeds.bbci.co.uk/news/business/rss.xml"
