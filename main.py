@@ -367,9 +367,19 @@ def build_prompt(
 - RSSに書かれていない事実を推測・補完しない。
 - rss_summary が空の場合、タイトル以上の詳細を勝手に作らない。
 - 同じ出来事の重複記事はまとめる。
-- 社会的影響、国際的重要性、経済への影響、公共性を重視する。
 - 出力は日本語。
 - 必ずJSONのみを返す。
+
+ニュースの選定方針:
+
+- 政治、行政、外交、安全保障、経済政策を優先する。
+- 政府・国会・中央省庁の重要な動きを優先する。
+- 日本経済や企業活動に影響するニュースを優先する。
+- 芸能、スポーツ、生活情報、軽い話題は選ばない。
+- 事件・事故は全国的な影響や社会的重要性が高いものを優先する。
+- 国際ニュースは、日本への影響が大きいもの、国際政治・安全保障・世界経済に重要なものを優先する。
+- IT・科学は、政策・産業・社会への影響が大きいニュースを優先する。
+- 単なる話題性より、政策・経済・社会への実質的影響を重視する。
 
 「3分で把握」は、
 その時間帯に知っておく価値の高いニュースを
@@ -377,15 +387,23 @@ def build_prompt(
 
 できるだけ以下の分野をバランスよく含めてください。
 
-- 国内
+- 国内政治・行政
+- 外交・安全保障
+- 経済・経済政策
 - 国際
-- 経済
-- IT
-- 科学
+- IT・科学
 - その他の重要ニュース
 
 重要なニュースがない分野を
 無理に入れる必要はありません。
+
+BBCの記事について:
+
+- BBCの記事は英語見出しを自然な日本語に翻訳する。
+- 直訳ではなく、日本語のニュース見出しとして自然で分かりやすくする。
+- 固有名詞、数字、事実関係を変更しない。
+- 英語原文の見出しも保持する。
+- BBC以外の記事は翻訳不要。
 
 形式:
 
@@ -405,7 +423,15 @@ def build_prompt(
             "headline":
                 "分かりやすい日本語見出し",
             "summary":
-                "2〜4文の簡潔な要約"
+                "何が起きたか、なぜ重要か、今後の注目点が分かるように2〜4文で簡潔に要約"
+        }}
+    ],
+
+    "bbc_translations": [
+        {{
+            "id": "BBC記事のid",
+            "ja_title":
+                "自然な日本語訳"
         }}
     ]
 }}
@@ -413,6 +439,13 @@ def build_prompt(
 important は最大8件です。
 
 important の id は、
+必ず入力記事に存在する id を
+そのまま使用してください。
+
+bbc_translations は、
+BBC Top、BBC World、BBC Business の記事だけを対象にしてください。
+
+bbc_translations の id も、
 必ず入力記事に存在する id を
 そのまま使用してください。
 
@@ -450,7 +483,7 @@ def call_gemini(
                     response_mime_type=
                         "application/json",
                     temperature=0.2,
-                    max_output_tokens=5000,
+                    max_output_tokens=6500,
                     thinking_config=
                         types.ThinkingConfig(
                             thinking_level=
@@ -474,6 +507,11 @@ def call_gemini(
         [],
     )
 
+    bbc_translations = data.get(
+        "bbc_translations",
+        [],
+    )
+
     if not isinstance(
         quick_summary,
         list,
@@ -486,11 +524,19 @@ def call_gemini(
     ):
         important = []
 
+    if not isinstance(
+        bbc_translations,
+        list,
+    ):
+        bbc_translations = []
+
     return {
         "quick_summary":
             quick_summary[:6],
         "important":
             important[:8],
+        "bbc_translations":
+            bbc_translations,
     }
 
 
@@ -699,6 +745,7 @@ TOP STORIES
 def render_other_headlines(
     articles,
     important_ids,
+    bbc_translation_map,
 ):
 
     remaining = [
@@ -732,10 +779,6 @@ def render_other_headlines(
 
         for article in group:
 
-            title = html.escape(
-                article["title"]
-            )
-
             url = html.escape(
                 article["url"],
                 quote=True,
@@ -749,6 +792,51 @@ def render_other_headlines(
                 article["published"]
             )
 
+            is_bbc = (
+                article["category"]
+                in {
+                    "BBC Top",
+                    "BBC World",
+                    "BBC Business",
+                }
+            )
+
+            if is_bbc:
+
+                ja_title = (
+                    bbc_translation_map.get(
+                        article["id"]
+                    )
+                )
+
+                if ja_title:
+
+                    title_html = f"""
+<div class="bbc-ja">
+{html.escape(ja_title)}
+</div>
+
+<div class="bbc-en">
+{html.escape(article["title"])}
+</div>
+"""
+
+                else:
+
+                    title_html = f"""
+<div>
+{html.escape(article["title"])}
+</div>
+"""
+
+            else:
+
+                title_html = f"""
+<div>
+{html.escape(article["title"])}
+</div>
+"""
+
             rows.append(
                 f"""
 <li>
@@ -758,7 +846,7 @@ href="{url}"
 target="_blank"
 rel="noopener"
 >
-{title}
+{title_html}
 </a>
 
 <div class="headline-meta">
@@ -1375,6 +1463,33 @@ main {{
         none;
 }}
 
+.bbc-ja {{
+
+    font-weight:
+        700;
+
+    color:
+        var(--text);
+}}
+
+.bbc-en {{
+
+    margin-top:
+        3px;
+
+    color:
+        var(--sub);
+
+    font-size:
+        .78rem;
+
+    font-weight:
+        500;
+
+    line-height:
+        1.45;
+}}
+
 .headline-meta {{
 
     color:
@@ -1719,6 +1834,32 @@ def main():
         in article_map
     }
 
+    bbc_translation_map = {}
+
+    for item in digest[
+        "bbc_translations"
+    ]:
+
+        aid = str(
+            item.get(
+                "id",
+                "",
+            )
+        )
+
+        ja_title = clean_text(
+            item.get(
+                "ja_title",
+                "",
+            )
+        )
+
+        if aid and ja_title:
+
+            bbc_translation_map[
+                aid
+            ] = ja_title
+
     body = (
 
         render_quick_summary(
@@ -1737,6 +1878,7 @@ def main():
         + render_other_headlines(
             articles,
             important_ids,
+            bbc_translation_map,
         )
     )
 
