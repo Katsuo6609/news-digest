@@ -940,6 +940,8 @@ def page_template(
 
 <meta charset="utf-8">
 
+<link rel="apple-touch-icon" href="icon.PNG">
+
 <meta
 name="viewport"
 content="width=device-width, initial-scale=1"
