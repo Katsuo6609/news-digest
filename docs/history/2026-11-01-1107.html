@@ -1,0 +1,3916 @@
+<!doctype html>
+
+<html lang="ja">
+
+<head>
+
+<meta charset="utf-8">
+
+<link rel="apple-touch-icon" sizes="180x180" href="/news-digest/icon.PNG?v=2">
+
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1"
+>
+
+<meta
+name="theme-color"
+content="#f7f7f5"
+>
+
+<title>
+News Digest
+</title>
+
+<style>
+
+:root {
+    --bg: #f7f7f5;
+    --card: #ffffff;
+    --text: #161616;
+    --sub: #707070;
+    --line: #deded9;
+    --accent: #b3261e;
+}
+
+@media
+(prefers-color-scheme: dark) {
+
+    :root {
+        --bg: #111211;
+        --card: #1a1b1a;
+        --text: #f3f3f0;
+        --sub: #a6a6a1;
+        --line: #333431;
+        --accent: #ff8a80;
+    }
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+
+    margin: 0;
+
+    color: var(--text);
+
+    background:
+        var(--bg);
+
+    font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Hiragino Sans",
+        "Yu Gothic",
+        sans-serif;
+
+    line-height: 1.7;
+
+    -webkit-font-smoothing:
+        antialiased;
+}
+
+a {
+    color: inherit;
+}
+
+.topbar {
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 20;
+
+    backdrop-filter:
+        blur(16px);
+
+    -webkit-backdrop-filter:
+        blur(16px);
+
+    background:
+        color-mix(
+            in srgb,
+            var(--bg) 88%,
+            transparent
+        );
+
+    border-bottom:
+        1px solid
+        var(--line);
+}
+
+.topbar-inner {
+
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    min-height: 54px;
+
+    padding:
+        0 18px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content:
+        space-between;
+}
+
+.brand {
+
+    font-size:
+        .96rem;
+
+    font-weight:
+        800;
+
+    letter-spacing:
+        -.025em;
+}
+
+.update-badge {
+
+    color:
+        var(--sub);
+
+    font-size:
+        .74rem;
+
+    font-weight:
+        650;
+}
+
+main {
+
+    max-width:
+        900px;
+
+    margin:
+        0 auto;
+
+    padding:
+        42px 18px 80px;
+}
+
+.hero {
+
+    padding:
+        8px 0 34px;
+
+    border-bottom:
+        1px solid
+        var(--line);
+}
+
+.hero-label {
+
+    color:
+        var(--accent);
+
+    font-weight:
+        800;
+
+    font-size:
+        .72rem;
+
+    letter-spacing:
+        .12em;
+}
+
+.hero h1 {
+
+    margin:
+        8px 0;
+
+    font-size:
+        clamp(
+            2.15rem,
+            7vw,
+            4rem
+        );
+
+    line-height:
+        1.05;
+
+    letter-spacing:
+        -.065em;
+}
+
+.hero-meta {
+
+    color:
+        var(--sub);
+
+    font-size:
+        .86rem;
+}
+
+.quick {
+
+    margin:
+        28px 0 44px;
+
+    padding:
+        24px 26px;
+
+    background:
+        var(--card);
+
+    border:
+        1px solid
+        var(--line);
+
+    border-radius:
+        18px;
+}
+
+.section-kicker {
+
+    color:
+        var(--accent);
+
+    font-size:
+        .69rem;
+
+    font-weight:
+        850;
+
+    letter-spacing:
+        .13em;
+}
+
+.quick-title {
+
+    margin:
+        3px 0 12px;
+
+    font-size:
+        1.45rem;
+
+    letter-spacing:
+        -.035em;
+}
+
+.quick ul {
+
+    margin:
+        0;
+
+    padding-left:
+        1.2rem;
+}
+
+.quick li {
+
+    margin:
+        8px 0;
+}
+
+.section {
+
+    margin-top:
+        46px;
+}
+
+.section-heading {
+
+    margin-bottom:
+        15px;
+
+    padding-bottom:
+        10px;
+
+    border-bottom:
+        2px solid
+        var(--text);
+}
+
+.section-heading h2 {
+
+    margin:
+        2px 0 0;
+
+    font-size:
+        1.65rem;
+
+    line-height:
+        1.2;
+
+    letter-spacing:
+        -.04em;
+}
+
+.lead-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(
+            2,
+            minmax(0, 1fr)
+        );
+
+    gap:
+        12px;
+}
+
+.lead-card {
+
+    background:
+        var(--card);
+
+    border:
+        1px solid
+        var(--line);
+
+    border-radius:
+        17px;
+
+    padding:
+        22px;
+
+    min-width:
+        0;
+}
+
+.lead-card:first-child {
+
+    grid-column:
+        1 / -1;
+
+    padding:
+        28px;
+}
+
+.eyebrow {
+
+    color:
+        var(--accent);
+
+    font-size:
+        .72rem;
+
+    font-weight:
+        800;
+
+    margin-bottom:
+        7px;
+}
+
+.lead-card h3 {
+
+    margin:
+        0 0 11px;
+
+    font-size:
+        1.18rem;
+
+    line-height:
+        1.48;
+
+    letter-spacing:
+        -.025em;
+}
+
+.lead-card:first-child h3 {
+
+    font-size:
+        clamp(
+            1.45rem,
+            4vw,
+            2rem
+        );
+}
+
+.lead-card p {
+
+    margin:
+        0;
+
+    font-size:
+        .95rem;
+}
+
+.card-meta {
+
+    margin-top:
+        16px;
+
+    padding-top:
+        12px;
+
+    border-top:
+        1px solid
+        var(--line);
+
+    color:
+        var(--sub);
+
+    font-size:
+        .76rem;
+
+    display:
+        flex;
+
+    gap:
+        10px;
+
+    align-items:
+        center;
+
+    flex-wrap:
+        wrap;
+}
+
+.card-meta a {
+
+    margin-left:
+        auto;
+
+    font-weight:
+        750;
+
+    text-decoration:
+        none;
+
+    color:
+        var(--text);
+}
+
+.headline-groups {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(
+            2,
+            minmax(0, 1fr)
+        );
+
+    gap:
+        13px;
+}
+
+.headline-group {
+
+    background:
+        var(--card);
+
+    border:
+        1px solid
+        var(--line);
+
+    border-radius:
+        16px;
+
+    padding:
+        18px 20px 10px;
+
+    min-width:
+        0;
+}
+
+.headline-group h3 {
+
+    margin:
+        0 0 7px;
+
+    padding-bottom:
+        9px;
+
+    border-bottom:
+        1px solid
+        var(--line);
+
+    font-size:
+        1rem;
+}
+
+.headline-group ul {
+
+    list-style:
+        none;
+
+    margin:
+        0;
+
+    padding:
+        0;
+}
+
+.headline-group li {
+
+    padding:
+        11px 0;
+
+    border-bottom:
+        1px solid
+        var(--line);
+}
+
+.headline-group li:last-child {
+
+    border-bottom:
+        0;
+}
+
+.headline-group a {
+
+    display:
+        block;
+
+    font-weight:
+        650;
+
+    font-size:
+        .92rem;
+
+    line-height:
+        1.55;
+
+    text-decoration:
+        none;
+}
+
+.bbc-ja {
+
+    font-weight:
+        700;
+
+    color:
+        var(--text);
+}
+
+.bbc-en {
+
+    margin-top:
+        3px;
+
+    color:
+        var(--sub);
+
+    font-size:
+        .78rem;
+
+    font-weight:
+        500;
+
+    line-height:
+        1.45;
+}
+
+.headline-meta {
+
+    color:
+        var(--sub);
+
+    margin-top:
+        4px;
+
+    font-size:
+        .72rem;
+}
+
+.empty {
+
+    margin-top:
+        28px;
+
+    background:
+        var(--card);
+
+    border:
+        1px solid
+        var(--line);
+
+    border-radius:
+        17px;
+
+    padding:
+        32px 24px;
+
+    text-align:
+        center;
+
+    color:
+        var(--sub);
+}
+
+.footer {
+
+    margin-top:
+        58px;
+
+    padding-top:
+        20px;
+
+    border-top:
+        1px solid
+        var(--line);
+
+    color:
+        var(--sub);
+
+    text-align:
+        center;
+
+    font-size:
+        .74rem;
+}
+
+@media
+(max-width: 650px) {
+
+    main {
+
+        padding:
+            28px 13px 60px;
+    }
+
+    .topbar-inner {
+
+        padding:
+            0 14px;
+    }
+
+    .quick {
+
+        padding:
+            19px 18px;
+
+        border-radius:
+            15px;
+    }
+
+    .lead-grid,
+    .headline-groups {
+
+        grid-template-columns:
+            1fr;
+    }
+
+    .lead-card,
+    .lead-card:first-child {
+
+        grid-column:
+            auto;
+
+        padding:
+            18px;
+
+        border-radius:
+            15px;
+    }
+
+    .lead-card:first-child h3 {
+
+        font-size:
+            1.35rem;
+    }
+
+    .headline-group {
+
+        border-radius:
+            15px;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header class="topbar">
+
+<div class="topbar-inner">
+
+<div class="brand">
+NEWS DIGEST
+</div>
+
+<div class="update-badge">
+8:07 ・ 12:07 ・ 20:07
+</div>
+
+</div>
+
+</header>
+
+<main>
+
+<section class="hero">
+
+<div class="hero-label">
+PERSONAL NEWS BRIEFING
+</div>
+
+<h1>
+今日のニュース
+</h1>
+
+<div class="hero-meta">
+
+2026年11月01日 11:07
+更新 ・ 新着
+120件
+
+</div>
+
+</section>
+
+
+<section class="quick">
+
+<div class="section-kicker">
+QUICK READ
+</div>
+
+<h2 class="quick-title">
+3分で把握
+</h2>
+
+<ul>
+<li>任期満了に伴う福岡市長選挙が1日に告示され、現職が高島宗一郎氏が出馬を見送り後継指名も行わない中、政令指定都市の市長選としては過去最多となる13人が立候補しました。候補者の多くが現職の路線継承を掲げており、明確な争点が見えにくい混戦模様となっています。</li><li>米連邦捜査局（FBI）は、暗号資産取引所バイナンスから60億ドル（約9480億円）を超える資産が盗まれた大規模流出事件について、北朝鮮による犯行と認定したことを明らかにしました。</li><li>厚生労働省は、輸入された中国産オクラおよびその加工品から基準値を超える農薬が相次いで検出されたことを受け、初の検査命令を出しました。今後は輸入時に検査が義務付けられます。</li><li>ルビオ米国務長官は、11月に中国の深センで開催予定のアジア太平洋経済協力会議（APEC）首脳会議に合わせ、米ロ首脳の接触の可能性についてロシアのラブロフ外相と協議したことを明らかにしました。</li><li>米中間選挙の投開票を前にした最後の週末、共和・民主の両党が支持獲得に向けてラストスパートをかけています。トランプ前大統領の支持率が低迷する一方、社会の分断や隠れトランプ層の影響など議論が続いています。</li><li>韓国産業通商部の発表によると、同国の10月の輸出額は前年同月比93.7％増となり、1～10月の累計輸出額が史上初めて9000億ドルを突破しました。</li>
+</ul>
+
+</section>
+
+<section class="section">
+
+<div class="section-heading">
+
+<div>
+
+<div class="section-kicker">
+TOP STORIES
+</div>
+
+<h2>
+重要ニュース
+</h2>
+
+</div>
+
+</div>
+
+<div class="lead-grid">
+
+
+<article class="lead-card">
+
+<div class="eyebrow">
+国内
+</div>
+
+<h3>
+福岡市長選が告示 過去最多13人の新人が立候補する混戦模様
+</h3>
+
+<p>
+任期満了に伴う福岡市長選が1日告示され、政令指定都市で過去最多となる13人の新人が立候補しました。現職が高島宗一郎氏が出馬を見送り後継指名を行わなかったため混戦となっており、多くの候補が現職路線の継承を掲げています。
+</p>
+
+<div class="card-meta">
+
+<span>
+Yahoo! 国内
+</span>
+
+<span>
+10:47
+</span>
+
+<a
+href="https://news.yahoo.co.jp/articles/f6ec8f871ad29c81bd62a1048fcd5920c0b2f878?source=rss"
+target="_blank"
+rel="noopener"
+>
+記事を読む ↗
+</a>
+
+</div>
+
+</article>
+
+<article class="lead-card">
+
+<div class="eyebrow">
+IT
+</div>
+
+<h3>
+FBI、バイナンスの1兆円規模資産流出を北朝鮮の犯行と認定
+</h3>
+
+<p>
+米連邦捜査局（FBI）は、暗号資産取引所バイナンスから60億ドル（約9480億円）相当の資産が不正流出した事件について、北朝鮮によるサイバー攻撃と認定しました。大規模な仮想通貨流出事件における国家主導の関与が改めて浮き彫りとなりました。
+</p>
+
+<div class="card-meta">
+
+<span>
+Yahoo! IT
+</span>
+
+<span>
+11:00
+</span>
+
+<a
+href="https://news.yahoo.co.jp/articles/2ccb0bcf29f5eaae96d2029483be87e4c4acb4f4?source=rss"
+target="_blank"
+rel="noopener"
+>
+記事を読む ↗
+</a>
+
+</div>
+
+</article>
+
+<article class="lead-card">
+
+<div class="eyebrow">
+国内
+</div>
+
+<h3>
+厚労省、中国産オクラに初の検査命令 基準値超え農薬検出で
+</h3>
+
+<p>
+厚生労働省は、輸入された中国産オクラから基準値を超える農薬が相次いで検出されたため、初の検査命令を発出しました。今後は中国産のオクラおよびその加工品を輸入する際、検査手続きが義務化されることになります。
+</p>
+
+<div class="card-meta">
+
+<span>
+Yahoo! 国内
+</span>
+
+<span>
+10:38
+</span>
+
+<a
+href="https://news.yahoo.co.jp/articles/b00a6fb31d71ff6032fa1bdd02aef37cc0b55efa?source=rss"
+target="_blank"
+rel="noopener"
+>
+記事を読む ↗
+</a>
+
+</div>
+
+</article>
+
+<article class="lead-card">
+
+<div class="eyebrow">
+国際
+</div>
+
+<h3>
+ルビオ米国務長官、APECでの米ロ首脳接触の可能性を協議
+</h3>
+
+<p>
+ルビオ米国務長官は、11月に中国・深センで開かれるAPEC首脳会議にあわせ、米ロ首脳会談または接触を行う可能性についてロシアのラブロフ外相と協議を行ったと発表しました。
+</p>
+
+<div class="card-meta">
+
+<span>
+Yahoo! 国際
+</span>
+
+<span>
+10:20
+</span>
+
+<a
+href="https://news.yahoo.co.jp/articles/a9edc34c1fc4d7dd9c5f8610763953b698130f0b?source=rss"
+target="_blank"
+rel="noopener"
+>
+記事を読む ↗
+</a>
+
+</div>
+
+</article>
+
+<article class="lead-card">
+
+<div class="eyebrow">
+国際
+</div>
+
+<h3>
+米中間選挙直前の週末、共和・民主両党が支持獲得へラストスパート
+</h3>
+
+<p>
+11月3日の投開票を目前に控え、米中間選挙に向けた最後の週末に両党が攻勢を強めています。テキサス州やミシガン州などの激戦州を中心に、候補者らが各地で支持を訴えています。
+</p>
+
+<div class="card-meta">
+
+<span>
+Yahoo! 国際
+</span>
+
+<span>
+10:14
+</span>
+
+<a
+href="https://news.yahoo.co.jp/articles/7ed97cb359f9e495c770acc546debf7898de2cbd?source=rss"
+target="_blank"
+rel="noopener"
+>
+記事を読む ↗
+</a>
+
+</div>
+
+</article>
+
+<article class="lead-card">
+
+<div class="eyebrow">
+国際
+</div>
+
+<h3>
+韓国の1～10月累計輸出額が9000億ドル突破 史上初の記録
+</h3>
+
+<p>
+韓国産業通商部によると、10月の同国輸出額は前年同月比93.7％増の1152億8000万ドルとなり、1～10月の累計輸出額が史上初めて9000億ドルを突破しました。
+</p>
+
+<div class="card-meta">
+
+<span>
+Yahoo! 国際
+</span>
+
+<span>
+10:22
+</span>
+
+<a
+href="https://news.yahoo.co.jp/articles/348b64168d7375cc887357d9004bf89b413f24b0?source=rss"
+target="_blank"
+rel="noopener"
+>
+記事を読む ↗
+</a>
+
+</div>
+
+</article>
+
+<article class="lead-card">
+
+<div class="eyebrow">
+経済
+</div>
+
+<h3>
+片山財務相が「空飛ぶクルマ」開発現場を視察 成長戦略の重点分野
+</h3>
+
+<p>
+片山財務大臣はスカイドライブ社の試験飛行場を視察し、政府の成長戦略で重点投資分野に位置付けられている「空飛ぶクルマ」産業の安全な実用化と事業展開への期待を示しました。
+</p>
+
+<div class="card-meta">
+
+<span>
+Yahoo! 経済
+</span>
+
+<span>
+10:42
+</span>
+
+<a
+href="https://news.yahoo.co.jp/articles/130229af7ed65efd933f1cad44200540ebeedd73?source=rss"
+target="_blank"
+rel="noopener"
+>
+記事を読む ↗
+</a>
+
+</div>
+
+</article>
+
+<article class="lead-card">
+
+<div class="eyebrow">
+国際
+</div>
+
+<h3>
+米地裁、トランプ氏による報道機関への損害賠償請求訴訟を再び棄却
+</h3>
+
+<p>
+トランプ前米大統領がウォールストリート・ジャーナル紙の報道で名誉を毀損されたとして100億ドルの損害賠償を求めていた訴訟で、フロリダ州の連邦地裁は訴えを再び棄却しました。
+</p>
+
+<div class="card-meta">
+
+<span>
+Yahoo! 国際
+</span>
+
+<span>
+10:37
+</span>
+
+<a
+href="https://news.yahoo.co.jp/articles/f17eb62f370edda2caf6c07ef0e87fb60259654a?source=rss"
+target="_blank"
+rel="noopener"
+>
+記事を読む ↗
+</a>
+
+</div>
+
+</article>
+
+
+</div>
+
+</section>
+
+<section class="section other-section">
+
+<div class="section-heading">
+
+<div>
+
+<div class="section-kicker">
+LATEST
+</div>
+
+<h2>
+その他の新着見出し
+</h2>
+
+</div>
+
+</div>
+
+<div class="headline-groups">
+
+
+<div class="headline-group">
+
+<h3>
+主要
+</h3>
+
+<ul>
+
+<li>
+
+<a
+href="https://news.yahoo.co.jp/pickup/6600918?source=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div>
+福岡市長選 政令市最多13人立候補
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+Yahoo! 主要
+・
+11:00
+
+</div>
+
+</li>
+
+<li>
+
+<a
+href="https://news.yahoo.co.jp/pickup/6600917?source=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div>
+「長すぎベルト」新トレンドの訳
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+Yahoo! 主要
+・
+11:00
+
+</div>
+
+</li>
+
+<li>
+
+<a
+href="https://news.yahoo.co.jp/pickup/6600912?source=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div>
+大学駅伝 GPS機器トラブルで謝罪
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+Yahoo! 主要
+・
+10:26
+
+</div>
+
+</li>
+
+<li>
+
+<a
+href="https://news.yahoo.co.jp/pickup/6600913?source=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div>
+GK鈴木彩艶 痛恨のオウンゴール
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+Yahoo! 主要
+・
+10:25
+
+</div>
+
+</li>
+
+</ul>
+
+</div>
+
+<div class="headline-group">
+
+<h3>
+国内
+</h3>
+
+<ul>
+
+<li>
+
+<a
+href="https://news.yahoo.co.jp/articles/aac749b386f38662932f5843fc4feb5c11114bd6?source=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div>
+【密着】フィリピン 29歳で離島にホテルを建設 出稼ぎの夫と離ればなれで暮らしながら日々奮闘する娘へ届ける父の想い(読売テレビ)
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+Yahoo! 国内
+・
+11:02
+
+</div>
+
+</li>
+
+<li>
+
+<a
+href="https://news.yahoo.co.jp/articles/972a37f12a188e9a8c5469dae00a268458eb2992?source=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div>
+「3億5000万円、現金なく借り入れで納付」江戸時代から続く農家12代目が直面した相続税の現実…“普通の家庭”も無縁ではない？ 制度の矛盾とは(ABEMA TIMES)
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+Yahoo! 国内
+・
+11:00
+
+</div>
+
+</li>
+
+<li>
+
+<a
+href="https://news.yahoo.co.jp/articles/248b8f275648cb59e845809f89b64e9e05ec8cfd?source=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div>
+北海道・羊蹄山麓で起きた“違法伐採” 渦中の中国人社長が真相激白…「外国人はルールを守らない」過熱する外国人バッシングと土地問題の課題(ABEMA TIMES)
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+Yahoo! 国内
+・
+11:00
+
+</div>
+
+</li>
+
+<li>
+
+<a
+href="https://news.yahoo.co.jp/articles/70c9c4c0cdda4b7e1caf0f28a465ccdb2ea5b920?source=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div>
+認知症薬は予想より2年早く登場 医療の未来図、AI診察やがん治療はどうなる？(テレビ朝日系（ANN）)
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+Yahoo! 国内
+・
+11:00
+
+</div>
+
+</li>
+
+<li>
+
+<a
+href="https://news.yahoo.co.jp/articles/4acb479ad5cf65567d579ad38396543157c7bc05?source=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div>
+「邪魔をするな！」から「良識を守ってこの街をよくしよう」まで…5年間の取材で振り返る渋谷ハロウィーンのリアル【2021→2025総まとめ】(文春オンライン)
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+Yahoo! 国内
+・
+11:00
+
+</div>
+
+</li>
+
+<li>
+
+<a
+href="https://news.yahoo.co.jp/articles/cac95c27f1f1d6739ac44ddc188f7450fb743e7f?source=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div>
+【台風情報】非常に強い台風31号（インファ）の進路予想 中心気圧940hPa、最大瞬間風速65m/sで小笠原近海をゆっくり東南東へ 3日午前9時には「非常に強い」勢力で日本の南に達する見込み(FNNプライムオンライン)
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+Yahoo! 国内
+・
+10:56
+
+</div>
+
+</li>
+
+<li>
+
+<a
+href="https://news.yahoo.co.jp/articles/3fa86c482449908f36738adb9e236eb335149d74?source=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div>
+ボンネットに乗せ2キロ走行か 奈良、殺人未遂疑い79歳女逮捕(共同通信)
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+Yahoo! 国内
+・
+10:55
+
+</div>
+
+</li>
+
+<li>
+
+<a
+href="https://news.yahoo.co.jp/articles/712b02d1e72277cb34c31011fe113b8504e8ef23?source=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div>
+明日2日～6日 近畿で25℃近くまで上がる所も 7日と8日の土日は昼間でも肌寒い(tenki.jp)
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+Yahoo! 国内
+・
+10:50
+
+</div>
+
+</li>
+
+<li>
+
+<a
+href="https://news.yahoo.co.jp/articles/17f14ab3d2f748ce994f536f243d099567e60f70?source=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div>
+多摩動物園で死んだライオン3頭 熱中症による多臓器不全か 体調回復7頭は展示再開(テレビ朝日系（ANN）)
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+Yahoo! 国内
+・
+10:48
+
+</div>
+
+</li>
+
+<li>
+
+<a
+href="https://news.yahoo.co.jp/articles/947820b94b34b2edbb87c5d0dac67b48a988b928?source=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div>
+神奈川・秦野市で人里に戻ったクマを再び捕獲し駆除 宗谷線はクマ衝突脱線(テレビ朝日系（ANN）)
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+Yahoo! 国内
+・
+10:35
+
+</div>
+
+</li>
+
+<li>
+
+<a
+href="https://news.yahoo.co.jp/articles/977c8cd1706d481e5643ba909637e345e23bda8d?source=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div>
+単身者の「相続」どうすれば…単身世帯の割合が4割超の今 「放置」で思わぬトラブルも(京都新聞)
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+Yahoo! 国内
+・
+10:30
+
+</div>
+
+</li>
+
+<li>
+
+<a
+href="https://news.yahoo.co.jp/articles/f7340ddf083d3ebeb6032a89a1492d320ab651bc?source=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div>
+「ハラル給食を推進した」と炎上…「にこにこ給食」提案の市議が明かす、拡散するデマに「言葉が届かない」虚しさ(AERA DIGITAL)
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+Yahoo! 国内
+・
+10:30
+
+</div>
+
+</li>
+
+<li>
+
+<a
+href="https://news.yahoo.co.jp/articles/fcfdc085684b8931e188033f99d30fba3b37b5ca?source=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div>
+熊本市長選、現職新人5人出馬 事実上一騎打ちの構図(共同通信)
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+Yahoo! 国内
+・
+10:30
+
+</div>
+
+</li>
+
+<li>
+
+<a
+href="https://news.yahoo.co.jp/articles/dec6fa7d32ad5792d3eeaa89cfbd37ab9d5f9837?source=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div>
+鳥取砂丘「ハロウィン聖地化」へ イベント盛況 知事もドラキュラに扮し参加(テレビ朝日系（ANN）)
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+Yahoo! 国内
+・
+10:29
+
+</div>
+
+</li>
+
+<li>
+
+<a
+href="https://news.yahoo.co.jp/articles/83f80a282aa23331e113721aebac04f51e9d8d80?source=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div>
+秀吉に領地を奪われても信仰は捨てなかった…キリシタン大名･高山右近を追放しマニラで客死させた&quot;真犯人&quot;(プレジデントオンライン)
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+Yahoo! 国内
+・
+10:15
+
+</div>
+
+</li>
+
+</ul>
+
+</div>
+
+<div class="headline-group">
+
+<h3>
+国際
+</h3>
+
+<ul>
+
+<li>
+
+<a
+href="https://news.yahoo.co.jp/articles/003e5f19c399e0bbc32b8331a3cb030f8a21be43?source=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div>
+トランプ支持率32％、民主党優勢の調査も…「隠れトランプ層」はいる？識者「右対左だけでなく“上対下”の対立も」(ABEMA TIMES)
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+Yahoo! 国際
+・
+11:00
+
+</div>
+
+</li>
+
+<li>
+
+<a
+href="https://news.yahoo.co.jp/articles/b139ecc6a5b14ef8a88021d15a7fee30ecbaaa19?source=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div>
+67％の米国3～12歳児が毎月利用、子ども向けポッドキャストはなぜ稼ぎにくいのか(Forbes JAPAN)
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+Yahoo! 国際
+・
+11:00
+
+</div>
+
+</li>
+
+<li>
+
+<a
+href="https://news.yahoo.co.jp/articles/1700882aa062de81d56dc5963f269dba4d9d235a?source=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div>
+死刑執行の薬物注射から生き延びた米死刑囚声明「身も心も痛い」 弁護側は減刑要求(テレビ朝日系（ANN）)
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+Yahoo! 国際
+・
+10:44
+
+</div>
+
+</li>
+
+<li>
+
+<a
+href="https://news.yahoo.co.jp/articles/655eb1bd277b5f444b35b198dad37af213a3230c?source=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div>
+ブラジル市民が民衆訴訟でフラヴィオ・ボウソナーロ上院議員の給与停止求める(MEGABRASIL)
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+Yahoo! 国際
+・
+10:43
+
+</div>
+
+</li>
+
+<li>
+
+<a
+href="https://news.yahoo.co.jp/articles/31744fc7efaf40f25d93820152a66c45e4a60f0d?source=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div>
+極端な猛暑・豪雨の経験が「緑の党」への支持高める…「低学歴男性」の変化が顕著(ハンギョレ新聞)
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+Yahoo! 国際
+・
+10:39
+
+</div>
+
+</li>
+
+<li>
+
+<a
+href="https://news.yahoo.co.jp/articles/e4f47a4208a661e64bcc1ebdff1f03d811327164?source=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div>
+たった１５キロの車移動が「地獄の入り口」に…ガザの苦痛を記事で体感してほしい 空にイスラエル軍のドローン、東京―川崎の距離で丸１日がかり(47NEWS)
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+Yahoo! 国際
+・
+10:32
+
+</div>
+
+</li>
+
+<li>
+
+<a
+href="https://news.yahoo.co.jp/articles/47dd4e476621df96f02422d189d2a0c06fb252a3?source=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div>
+AI操縦士が自ら作戦立て標的攻撃…「韓国ドローン」鳥肌立つ進化（2）(中央日報日本語版)
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+Yahoo! 国際
+・
+10:31
+
+</div>
+
+</li>
+
+<li>
+
+<a
+href="https://news.yahoo.co.jp/articles/afa7d7d818e728545d7c2c8851aab62859b0e572?source=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div>
+AI操縦士が自ら作戦立て標的攻撃…「韓国ドローン」鳥肌立つ進化（1）(中央日報日本語版)
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+Yahoo! 国際
+・
+10:31
+
+</div>
+
+</li>
+
+<li>
+
+<a
+href="https://news.yahoo.co.jp/articles/ce7e48f24f78cc966d2fb97d7bb7f869582d153f?source=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div>
+「地獄のよう…」現場に急行し救護支援 地元男性が語る緊迫 スペイン列車衝突事故(テレビ朝日系（ANN）)
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+Yahoo! 国際
+・
+10:16
+
+</div>
+
+</li>
+
+<li>
+
+<a
+href="https://news.yahoo.co.jp/articles/e93e474050a43f94d5ab80a82009b7e39c4bdb48?source=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div>
+マカオ、週次の歩行者による道路横断違反の検挙数は78件…3週連続減、4週ぶり2桁まで下落(マカオ新聞)
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+Yahoo! 国際
+・
+10:10
+
+</div>
+
+</li>
+
+<li>
+
+<a
+href="https://news.yahoo.co.jp/articles/bd05939c412fcbc8799dcd863282ca81afedc535?source=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div>
+「生きていく道は他にもあるだろう」…韓国若年層の「所得上昇移動」が過去最低に(ハンギョレ新聞)
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+Yahoo! 国際
+・
+10:09
+
+</div>
+
+</li>
+
+<li>
+
+<a
+href="https://news.yahoo.co.jp/articles/6a731061ed48637dfeb34be3abdd2478e3d3ddb2?source=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div>
+ロシア占領下の避難者、ウクライナ支配地域に帰還 局地的停戦で夫婦が1711日ぶりの再会(CNN.co.jp)
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+Yahoo! 国際
+・
+10:05
+
+</div>
+
+</li>
+
+</ul>
+
+</div>
+
+<div class="headline-group">
+
+<h3>
+経済
+</h3>
+
+<ul>
+
+<li>
+
+<a
+href="https://news.yahoo.co.jp/articles/2fd30bf0b9677f55c4d5924885d4903a680374d1?source=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div>
+ヤリスに6MTがまだ残っている!! 177万1000円から楽しめる国産コンパクトの良心(ベストカーWeb)
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+Yahoo! 経済
+・
+11:00
+
+</div>
+
+</li>
+
+<li>
+
+<a
+href="https://news.yahoo.co.jp/articles/0bed32d1f350a53bed1d37ff4f8e300975dbbc90?source=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div>
+【令和8年11月のバス占い付き】鉄道至便な豊川稲荷にバスだけで行ってみた！(ベストカーWeb)
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+Yahoo! 経済
+・
+11:00
+
+</div>
+
+</li>
+
+<li>
+
+<a
+href="https://news.yahoo.co.jp/articles/1c519c0b2fab3a868b55fb4b9ad98e3d1ecece05?source=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div>
+【この難問、解けますか？】京大入試の「厳選予想問題」で鍛える“大人”に必要な「本当の地頭力」(東洋経済オンライン)
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+Yahoo! 経済
+・
+11:00
+
+</div>
+
+</li>
+
+<li>
+
+<a
+href="https://news.yahoo.co.jp/articles/45b6dbb1eba289c6fd298e92610d88a7e8ebe84f?source=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div>
+年金の繰上げ受給、後悔しています…貯金1,300万円・60歳専業主婦が「ネットに騙された」とこぼしたワケ【CFPが解説】(THE GOLD ONLINE（ゴールドオンライン）)
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+Yahoo! 経済
+・
+11:00
+
+</div>
+
+</li>
+
+<li>
+
+<a
+href="https://news.yahoo.co.jp/articles/13c3bb520d13fd03121e8bde271d3e8a2c0fa3d9?source=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div>
+相次ぐ「家族系YouTuber」の収益化停止 欧州では「子どもの肖像権保護」の法規制も テレビはOK、動画だとダメ？弁護士の見解は(ABEMA TIMES)
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+Yahoo! 経済
+・
+11:00
+
+</div>
+
+</li>
+
+<li>
+
+<a
+href="https://news.yahoo.co.jp/articles/110f91af13f744cd48f6904085c2c8e727659d78?source=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div>
+アドレスV100のエンジンを搭載し駆動系もセッティングした【Hi-UP R】(MotorFan)
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+Yahoo! 経済
+・
+11:00
+
+</div>
+
+</li>
+
+<li>
+
+<a
+href="https://news.yahoo.co.jp/articles/ce136212a6eb240f9cfe81c438aaa6b14a252a97?source=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div>
+「偶然の出会いが運命を変えた！」若きオーナーが手に入れたのは伝説の湾岸最高速Z32だった(MotorFan)
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+Yahoo! 経済
+・
+11:00
+
+</div>
+
+</li>
+
+<li>
+
+<a
+href="https://news.yahoo.co.jp/articles/cf99d2d325d18b7bcf4ab63faed25827b8ad8761?source=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div>
+【国民年金保険料の控除証明書】10月23日から順次届く。子どもの1年前納分「21万530円」を払った親も年末調整で社会保険料控除(LIMO)
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+Yahoo! 経済
+・
+10:50
+
+</div>
+
+</li>
+
+<li>
+
+<a
+href="https://news.yahoo.co.jp/articles/273caceaa54ad617ef8893e308c7c79249c4040f?source=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div>
+スノーシーズン到来 軽井沢のスキー場で初滑り 雨少なく人工雪が順調(テレビ朝日系（ANN）)
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+Yahoo! 経済
+・
+10:46
+
+</div>
+
+</li>
+
+<li>
+
+<a
+href="https://news.yahoo.co.jp/articles/5f1cb43b48b2cc22a1c86ff28a1ebcfb6c1ce2fe?source=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div>
+すぽんと着るだけでコーデが完成！無印良品の「大人かわいいワンピース」体型カバーもバッチリで、お出かけのたびに着たくなる！《購入レビュー》(ダイヤモンド・オンライン)
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+Yahoo! 経済
+・
+10:42
+
+</div>
+
+</li>
+
+<li>
+
+<a
+href="https://news.yahoo.co.jp/articles/29c25feda808e38e8113e2f72d223ab03fa1bef5?source=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div>
+「通勤特急が山を登るの!?」 わずか1編成のみの「万能すぎる異端児」健在！ “いいとこ取り”な出自とは(乗りものニュース)
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+Yahoo! 経済
+・
+10:42
+
+</div>
+
+</li>
+
+<li>
+
+<a
+href="https://news.yahoo.co.jp/articles/2d406a47efd58ae53de5f60722c011ae36efec5a?source=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div>
+東京・港区の6人に1人が社長 赤坂が14年連続全国トップ 西新宿や六本木も多く(テレビ朝日系（ANN）)
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+Yahoo! 経済
+・
+10:36
+
+</div>
+
+</li>
+
+<li>
+
+<a
+href="https://news.yahoo.co.jp/articles/13a471fb0c0e0b645b0ac6f77ed0e88f034c8c5e?source=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div>
+「埼玉県民の日」は鉄道がおトク！ 埼玉県内が乗り放題のフリー乗車券、私鉄5社が発売(鉄道コム)
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+Yahoo! 経済
+・
+10:35
+
+</div>
+
+</li>
+
+<li>
+
+<a
+href="https://news.yahoo.co.jp/articles/6ff0f147860f96992f655e1092db8ffd76335b9b?source=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div>
+「母さんが老人ホームに入ったので、人生終了です…」84歳母の年金月22万円で養われていた54歳次男坊。役所で「生活保護は受給できません」と告げられ、完全に詰み……【FPが解説】(THE GOLD ONLINE（ゴールドオンライン）)
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+Yahoo! 経済
+・
+10:30
+
+</div>
+
+</li>
+
+<li>
+
+<a
+href="https://news.yahoo.co.jp/articles/3b8d5f1900f82abfa98ab12f805ef199be7deefe?source=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div>
+中国Rokid、ディスプレー搭載AIグラスで世界首位 シェア41％、メタを上回る(36Kr Japan)
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+Yahoo! 経済
+・
+10:30
+
+</div>
+
+</li>
+
+<li>
+
+<a
+href="https://news.yahoo.co.jp/articles/1914cf84f4211bced72c04dc7618ac2d37f80f85?source=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div>
+カワサキ『Ninja ZX-10R』レース専用モデルを209万円で受注開始(レスポンス)
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+Yahoo! 経済
+・
+10:30
+
+</div>
+
+</li>
+
+<li>
+
+<a
+href="https://news.yahoo.co.jp/articles/9c6356958f8bba321f86cd497cf49ed2add67305?source=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div>
+昔の記憶がよみがえる…！セリアの「平成レトロなミニポーチ」可愛すぎてまとめ買いしちゃた！《購入レビュー》(ダイヤモンド・オンライン)
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+Yahoo! 経済
+・
+10:12
+
+</div>
+
+</li>
+
+<li>
+
+<a
+href="https://news.yahoo.co.jp/articles/c54055536cf9e3e281aaf9d877939b5c63f440b4?source=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div>
+固定資産税のカード払いは損？得？カード払いの手数料と「損益分岐点」をシミュレーションで解説(LIMO)
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+Yahoo! 経済
+・
+10:10
+
+</div>
+
+</li>
+
+<li>
+
+<a
+href="https://news.yahoo.co.jp/articles/b6cde9254b6ba9b4e5b009577ad88071cceab8cc?source=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div>
+F1だけじゃなくてオフロードでもホンダは大暴れ！ 驚愕の1300馬力SUV「パスポート バハスペック」がSEMAショーに降臨(WEB CARTOP)
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+Yahoo! 経済
+・
+10:10
+
+</div>
+
+</li>
+
+<li>
+
+<a
+href="https://news.yahoo.co.jp/articles/2f819b3148503c1d956fe493528d5d7be76ba02c?source=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div>
+6速MT「TY85」復活…スバル、スポーツセダン「WRX」MTモデルを投入(ニュースイッチ)
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+Yahoo! 経済
+・
+10:10
+
+</div>
+
+</li>
+
+<li>
+
+<a
+href="https://news.yahoo.co.jp/articles/8392c6fd537ae01e095e0747f9e5a627439c05da?source=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div>
+疲れた体に染みる甘辛タレ 茨城の老舗ドライブインが誇る名物スタミナライス(くるまのニュース)
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+Yahoo! 経済
+・
+10:10
+
+</div>
+
+</li>
+
+<li>
+
+<a
+href="https://news.yahoo.co.jp/articles/60fa6d5e4f76df73ce607a4e3012cf323a8ef96f?source=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div>
+NISMOデザインのリバリーをまとうSCCAツーリング2仕様のZ。日産がSEMAショーにセントラ スペックV、S30レストモッドとともに出展(MotorFan)
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+Yahoo! 経済
+・
+10:06
+
+</div>
+
+</li>
+
+<li>
+
+<a
+href="https://news.yahoo.co.jp/articles/d7009dd6f6a45a834ad871f54b8a498ad4086a9b?source=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div>
+国民年金保険料の控除証明書が11月上旬までに届く。老齢基礎年金は1か月納めると年「約1765円」増え、学生納付特例と納付猶予の月は追納しないと反映されない(LIMO)
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+Yahoo! 経済
+・
+10:05
+
+</div>
+
+</li>
+
+</ul>
+
+</div>
+
+<div class="headline-group">
+
+<h3>
+IT
+</h3>
+
+<ul>
+
+<li>
+
+<a
+href="https://news.yahoo.co.jp/articles/f046816c9acf924d6994b9e6002293428c370282?source=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div>
+操縦桿風デザインのスティック型ワイヤレスマウスがサンワサプライから、計3モデル(AKIBA PC Hotline!)
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+Yahoo! IT
+・
+10:05
+
+</div>
+
+</li>
+
+</ul>
+
+</div>
+
+<div class="headline-group">
+
+<h3>
+科学
+</h3>
+
+<ul>
+
+<li>
+
+<a
+href="https://news.yahoo.co.jp/articles/ae80c2ddc4ac5854538454ffb5677c74bc06989f?source=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div>
+【闘病】自覚症状はなかったのに… 「転移なし」から一転した『子宮頸がん』はステージ3(メディカルドック)
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+Yahoo! 科学
+・
+11:03
+
+</div>
+
+</li>
+
+<li>
+
+<a
+href="https://news.yahoo.co.jp/articles/19b210459c563643192cd07e1ff74c0c9a7f98ba?source=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div>
+その名も「王」。高さ50cm、重さ2.2kg。新種の超デカい真菌(ギズモード・ジャパン)
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+Yahoo! 科学
+・
+10:30
+
+</div>
+
+</li>
+
+</ul>
+
+</div>
+
+<div class="headline-group">
+
+<h3>
+地域
+</h3>
+
+<ul>
+
+<li>
+
+<a
+href="https://news.yahoo.co.jp/articles/ba811bf1b748fafc9c274dad08ea7d00f5449f33?source=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div>
+「ティーエムオーみやしろ」、破産手続きの開始を決定 商業施設賃貸の第三セクター 想定の集客数を確保できず、採算が悪化…テナントの撤退が相次ぐ 負債総額は現在調査中(埼玉新聞)
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+Yahoo! 地域
+・
+11:06
+
+</div>
+
+</li>
+
+<li>
+
+<a
+href="https://news.yahoo.co.jp/articles/3769f5d9d213bdd4569d250c665fbd811916414f?source=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div>
+自動運転バス、福井駅周辺の市街地で実証運行開始 アプリで事前予約すれば乗車無料(福井新聞ＯＮＬＩＮＥ)
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+Yahoo! 地域
+・
+11:05
+
+</div>
+
+</li>
+
+<li>
+
+<a
+href="https://news.yahoo.co.jp/articles/91067c04d2b56526a0aa1d5583e7629ece6eae5a?source=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div>
+福岡市長選挙告示 午前11時時点で過去最多13人が立候補 現職が後継指名せず混戦模様(TNCテレビ西日本)
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+Yahoo! 地域
+・
+11:05
+
+</div>
+
+</li>
+
+<li>
+
+<a
+href="https://news.yahoo.co.jp/articles/22ad85893d80707cf37604dbcaf35706eb8ea12c?source=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div>
+国道10号で軽乗用車が歩行者の女性（42）はね死亡 鹿児島・姶良市(MBC南日本放送)
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+Yahoo! 地域
+・
+11:04
+
+</div>
+
+</li>
+
+<li>
+
+<a
+href="https://news.yahoo.co.jp/articles/24cfc28d7a23f656185b7a4574c0eafb01c970a6?source=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div>
+会場に響く甲高いエンジン音 チェーンソー丸太早切り大会に全国から林業従事者40人あまり参加 岩手・住田町(IBC岩手放送)
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+Yahoo! 地域
+・
+11:03
+
+</div>
+
+</li>
+
+<li>
+
+<a
+href="https://news.yahoo.co.jp/articles/deaa189d7dd569edc5ee0e0fc698e7f255c3dcc9?source=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div>
+【高校駅伝】都大路の切符を掴むのは 各中継所通過タイムや順位など結果速報 【広島県高校駅伝大会（男子）】(RCC中国放送)
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+Yahoo! 地域
+・
+11:02
+
+</div>
+
+</li>
+
+<li>
+
+<a
+href="https://news.yahoo.co.jp/articles/efff34637a83d8d464ad1c5dfcfd5ccc805992bd?source=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div>
+鹿児島県 クロウサギ生態・最新調査成果報告 写真家浜田氏 徳之島・当部や金見崎の貴重映像公開 世界自然遺産登録5周年記念(奄美新聞)
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+Yahoo! 地域
+・
+11:01
+
+</div>
+
+</li>
+
+<li>
+
+<a
+href="https://news.yahoo.co.jp/articles/8db83b3b755c06b782ac66b98d0d8bb1ad259855?source=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div>
+【沖縄の天気】11月1日から2日 沖縄本島地方・宮古島地方・八重山地方・大東島地方(沖縄タイムス)
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+Yahoo! 地域
+・
+11:01
+
+</div>
+
+</li>
+
+<li>
+
+<a
+href="https://news.yahoo.co.jp/articles/26edacf7ce814aa7d701c8ea28018d623aeec573?source=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div>
+【長崎いまコレ】ピザの自動販売機！？ すぐにお店のようなサクふわピザが楽しめる！ 対馬市「ナンバーナインカフェ」(長崎文化放送)
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+Yahoo! 地域
+・
+11:00
+
+</div>
+
+</li>
+
+<li>
+
+<a
+href="https://news.yahoo.co.jp/articles/acd0d14bd6a6d6db361543a897aa9170b8078acb?source=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div>
+【カメムシ大発生】例年の6倍飛来した地域も…柿農家は悲鳴「収穫量が半減」「商品にならない」高温傾向・暖冬で各地に『注意報』来年も多くなる可能性(MBSニュース)
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+Yahoo! 地域
+・
+11:00
+
+</div>
+
+</li>
+
+<li>
+
+<a
+href="https://news.yahoo.co.jp/articles/41eb83f47d2189d9ea436c9aeb4064082f4f913a?source=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div>
+【倒産】訪問介護サービス業者が破産手続き開始決定 県北を主要エリアに事業を展開【帝国データバンク】(RSK山陽放送)
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+Yahoo! 地域
+・
+11:00
+
+</div>
+
+</li>
+
+<li>
+
+<a
+href="https://news.yahoo.co.jp/articles/b3f27c4f5a2f1472f2f2f093014081e8ebb0cafe?source=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div>
+島原・天草・長島の架橋構想、実現に必要な調査再開を国に要望…期成会など６団体(長崎新聞)
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+Yahoo! 地域
+・
+11:00
+
+</div>
+
+</li>
+
+<li>
+
+<a
+href="https://news.yahoo.co.jp/articles/0cc23891d732c7a66679a406481cf32ebc59b519?source=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div>
+ミシュランガイド新エリア決定で大注目「淡路島」のグルメ 来年2月の発表を前に“ミシュラン級”のおいしさを独自調査 「鯛塩ラーメン・サワラ丼・淡路牛ステーキ」が“三ツ星”に(関西テレビ)
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+Yahoo! 地域
+・
+11:00
+
+</div>
+
+</li>
+
+<li>
+
+<a
+href="https://news.yahoo.co.jp/articles/c77ad459074bc3e58c251cafc9c42a929eab450b?source=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div>
+暴力団の構成員の男（37） 知人男性の家に侵入した疑いで緊急逮捕 北海道・旭川市(STVニュース北海道)
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+Yahoo! 地域
+・
+11:00
+
+</div>
+
+</li>
+
+<li>
+
+<a
+href="https://news.yahoo.co.jp/articles/f99b26e630978754a4c0dee2c32637ccd7ead629?source=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div>
+【台風情報】非常に強い台風31号の進路予想 中心気圧940hPaでゆっくり東南東へ ３日午前9時には「非常に強い」勢力で日本の南に達する見込み 中心気圧は955hPa、最大瞬間風速は60m/sの予想(NBS長野放送)
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+Yahoo! 地域
+・
+10:59
+
+</div>
+
+</li>
+
+<li>
+
+<a
+href="https://news.yahoo.co.jp/articles/243c03c19aa8d749817b763922bbe99df830ef03?source=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div>
+ペスカドーラ町田、暫定首位に すみだと引き分け(みんなの経済新聞ネットワーク)
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+Yahoo! 地域
+・
+10:57
+
+</div>
+
+</li>
+
+<li>
+
+<a
+href="https://news.yahoo.co.jp/articles/f1beeae2dc0e96f097edfcb280858d4aff49137f?source=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div>
+【J3】ガイナーレ鳥取 反撃及ばずＦＣ琉球に大敗…リーグ戦5連敗(TSKさんいん中央テレビ)
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+Yahoo! 地域
+・
+10:55
+
+</div>
+
+</li>
+
+<li>
+
+<a
+href="https://news.yahoo.co.jp/articles/70e36cf00e34b4d9ce0f753fcb7e7781a82ff313?source=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div>
+【台風情報】非常に強い台風31号（インファ）中心気圧940hPa・最大瞬間風速65m/s 4日ごろ急カーブ→6日ごろ関東付近に最接近か 予想進路・雨と風のシミュレーション（気象庁）(ｔｙｓテレビ山口)
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+Yahoo! 地域
+・
+10:53
+
+</div>
+
+</li>
+
+<li>
+
+<a
+href="https://news.yahoo.co.jp/articles/9bc059fbf14fc81132189226caf6efce442324c2?source=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div>
+大分市佐賀関の関埼灯台、3日に一般公開 パネルで歴史紹介、スタンプラリーも(大分合同新聞)
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+Yahoo! 地域
+・
+10:50
+
+</div>
+
+</li>
+
+<li>
+
+<a
+href="https://news.yahoo.co.jp/articles/3c91d4674d3ed2eb1da8929a27fc3063a2c59405?source=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div>
+1日350グラムの野菜摂取目標を応援 農業法人運営の「まちの駅」オープン 直売スペースと食堂を展開【長野・塩尻市】(テレビ信州)
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+Yahoo! 地域
+・
+10:50
+
+</div>
+
+</li>
+
+<li>
+
+<a
+href="https://news.yahoo.co.jp/articles/fe5623d452628640b300b98455c7f08a54f96244?source=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div>
+【速報】住宅から“縛られた遺体”死体遺棄容疑で妹を再逮捕 兄の口座から金引き出しも 小樽市(STVニュース北海道)
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+Yahoo! 地域
+・
+10:49
+
+</div>
+
+</li>
+
+<li>
+
+<a
+href="https://news.yahoo.co.jp/articles/1398bc480520b1a1bed0e640b8316d56ace28ef8?source=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div>
+「無免許がばれたらまずいと思った」ハロウィーンの暴動か…原付バイクで赤信号無視し逃走図った男子高校生を逮捕(ＫＫＴ熊本県民テレビ)
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+Yahoo! 地域
+・
+10:47
+
+</div>
+
+</li>
+
+<li>
+
+<a
+href="https://news.yahoo.co.jp/articles/0397f6f4803d923158ea33555c87692596b4813c?source=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div>
+「殴られたから包丁持ち出して刺した」北九州市八幡西区で友人男性の腹を刺した殺人未(KBC九州朝日放送)
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+Yahoo! 地域
+・
+10:45
+
+</div>
+
+</li>
+
+<li>
+
+<a
+href="https://news.yahoo.co.jp/articles/31f30bdb459ba99564adbd46f7cc19d8c7efa888?source=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div>
+総額65万円以上…タイヤ18本盗んだ男（47）を逮捕 警戒中の警察官が犯行を目撃！ 北海道(STVニュース北海道)
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+Yahoo! 地域
+・
+10:45
+
+</div>
+
+</li>
+
+<li>
+
+<a
+href="https://news.yahoo.co.jp/articles/40fef4a80bca813f99e77d7bed5f29a940c3cb8e?source=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div>
+絶景コスモス500万本、見頃を迎える 3ヘクタールの畑で風に揺れ、波打つ花々 3日にイベント、摘み取りやミカン狩り…ディズニーランド招待券が当たるくじも(埼玉新聞)
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+Yahoo! 地域
+・
+10:44
+
+</div>
+
+</li>
+
+<li>
+
+<a
+href="https://news.yahoo.co.jp/articles/fbb095476398ffbc3b914a90a62ccddf6ef25772?source=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div>
+「気分は運転士」JRの車両基地で鉄道の“裏側”を学ぶ！特殊車両『レールスター』に乗る体験も 兵庫・豊岡市(MBSニュース)
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+Yahoo! 地域
+・
+10:43
+
+</div>
+
+</li>
+
+<li>
+
+<a
+href="https://news.yahoo.co.jp/articles/7308289fc44ca79833f50de8e99b2ffdbfea7032?source=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div>
+福岡県内で2年ぶり 牛の伝染病「ランピースキン病」感染疑いの牛をみやま市の農場で確認 人への感染はなし 福岡県が飼育農場などに注意喚起 福岡県(TNCテレビ西日本)
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+Yahoo! 地域
+・
+10:43
+
+</div>
+
+</li>
+
+<li>
+
+<a
+href="https://news.yahoo.co.jp/articles/2ffe55cb971a4f845883c8f30ade79e04b660781?source=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div>
+【速報】兄の死体遺棄容疑で50歳の妹を再逮捕 住宅の地下物置から布団のようなものに包まれた兄の遺体 北海道小樽市(HBCニュース北海道)
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+Yahoo! 地域
+・
+10:42
+
+</div>
+
+</li>
+
+<li>
+
+<a
+href="https://news.yahoo.co.jp/articles/aac4e440b34e6c370c07c2990e8cce4f37c6da49?source=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div>
+警察庁が八田容疑者の手配ポスターを新たに作製 特徴的な耳を強調、懸賞金や名前の表記を大きく(大分合同新聞)
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+Yahoo! 地域
+・
+10:40
+
+</div>
+
+</li>
+
+<li>
+
+<a
+href="https://news.yahoo.co.jp/articles/9de0c4c96162fa6c4699c071a7362393f3b7e7d4?source=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div>
+“えん罪救済”支援を呼びかける集会 裁判やり直しで無罪確定した人など11人が出席 大阪・城東区(MBSニュース)
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+Yahoo! 地域
+・
+10:39
+
+</div>
+
+</li>
+
+<li>
+
+<a
+href="https://news.yahoo.co.jp/articles/9c1b4890d242e9064e1995ddcc5d6e2fcf597513?source=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div>
+国道1号の交差点で直進する普通乗用車と右折中の原付バイクが衝突 原付バイクを運転していた１９歳の男性が重傷 静岡・沼津市(静岡朝日テレビ)
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+Yahoo! 地域
+・
+10:39
+
+</div>
+
+</li>
+
+<li>
+
+<a
+href="https://news.yahoo.co.jp/articles/c363b04482a9644b903e6b4a4ece0a1e7692c094?source=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div>
+道路を歩いて横断中… 高齢男性がトラックにはねられ6時間半後に死亡 四国中央市【愛媛】(南海放送)
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+Yahoo! 地域
+・
+10:38
+
+</div>
+
+</li>
+
+<li>
+
+<a
+href="https://news.yahoo.co.jp/articles/d0791a46474546bceec9f1e9f9bd0894a990421f?source=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div>
+【台風情報】非常に強い「台風31号（インファ）」最大瞬間風速65m/s 最新の進路予報と11月12日（木）までの雨風シミュレーション《気象庁・1日9時45分発表》(HBCニュース北海道)
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+Yahoo! 地域
+・
+10:37
+
+</div>
+
+</li>
+
+<li>
+
+<a
+href="https://news.yahoo.co.jp/articles/dc7537b0965ae6e05c5c7f36de4a32dca795954f?source=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div>
+【速報】鳴子峡レストハウス付近で乗用車が歩道に突っ込み複数人巻き込まれる事故＜宮城・大崎市＞(ミヤギテレビ)
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+Yahoo! 地域
+・
+10:37
+
+</div>
+
+</li>
+
+<li>
+
+<a
+href="https://news.yahoo.co.jp/articles/3c6c951fda0807c7a8b0e07554e8938524f0e2de?source=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div>
+「赤ちゃんポスト」について意見交換 行政主導での導入目指す大阪・泉佐野市で(MBSニュース)
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+Yahoo! 地域
+・
+10:36
+
+</div>
+
+</li>
+
+<li>
+
+<a
+href="https://news.yahoo.co.jp/articles/0d0d273bd1c46e1d92e090c36faef66a231419bb?source=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div>
+夜の国道で歩行者がトラックにはねられ死亡【愛媛】(テレビ愛媛)
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+Yahoo! 地域
+・
+10:36
+
+</div>
+
+</li>
+
+<li>
+
+<a
+href="https://news.yahoo.co.jp/articles/8c69a981423e1440c6522b15ea88bb4a759bd6ab?source=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div>
+俳優・神尾佑さん「30年の経験、若手に伝える」 福島県内のドラマ、ロケ番組に出演(福島民友新聞)
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+Yahoo! 地域
+・
+10:34
+
+</div>
+
+</li>
+
+<li>
+
+<a
+href="https://news.yahoo.co.jp/articles/0ea1c3d67f465bf736304fdd1a7ecda671147769?source=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div>
+秋風爽快、ペダル踏む 上山で「ツール・ド・ラ・フランス」(山形新聞)
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+Yahoo! 地域
+・
+10:33
+
+</div>
+
+</li>
+
+<li>
+
+<a
+href="https://news.yahoo.co.jp/articles/85e045661332ff15155f9cda80a758927ceab8b0?source=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div>
+人気集め文化祭で1500個を完売…「レアチーズ大福」高校生が授業で考案、老舗和菓子店が開発 店には文化祭後もリピーター、地域住民に舌鼓を打たせる新たなスイーツ(埼玉新聞)
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+Yahoo! 地域
+・
+10:33
+
+</div>
+
+</li>
+
+<li>
+
+<a
+href="https://news.yahoo.co.jp/articles/590462cc0b2a2267759491050f1a09f61af29608?source=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div>
+「竹田薪能」水鏡に映る幽玄の舞 水上舞台で400人が能と狂言を堪能(大分合同新聞)
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+Yahoo! 地域
+・
+10:30
+
+</div>
+
+</li>
+
+<li>
+
+<a
+href="https://news.yahoo.co.jp/articles/4dfb259aaf5ca47e90932abce7795425289b20a4?source=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div>
+居酒屋で酔ってトイレのドアノブを壊し、止めに入った店員の首を左手で押さえつける ３０代の男が逮捕 浜松市浜名区 (静岡朝日テレビ)
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+Yahoo! 地域
+・
+10:30
+
+</div>
+
+</li>
+
+<li>
+
+<a
+href="https://news.yahoo.co.jp/articles/6907b57389f63d0952d602fe9a65a7d98c7582dc?source=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div>
+金子鷗亭の詩、大きな紙に一筆 函館美術館で松前高書道部パフォーマンス(函館新聞デジタル)
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+Yahoo! 地域
+・
+10:30
+
+</div>
+
+</li>
+
+<li>
+
+<a
+href="https://news.yahoo.co.jp/articles/a6a02086cca64dd6da472456d2b941d7dcbf6a6a?source=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div>
+男（22）10代前半の少女にキスするなどわいせつ行為 「娘を連れまわしている」通報で発覚札幌市(STVニュース北海道)
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+Yahoo! 地域
+・
+10:30
+
+</div>
+
+</li>
+
+<li>
+
+<a
+href="https://news.yahoo.co.jp/articles/14672cf83e0c320ddd33e3b1d9222c990746874f?source=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div>
+北海道江差町の姥神大神宮渡御祭 実行委組織解散見送り、実施の道探る(函館新聞デジタル)
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+Yahoo! 地域
+・
+10:29
+
+</div>
+
+</li>
+
+<li>
+
+<a
+href="https://news.yahoo.co.jp/articles/cfa522511328070daa21feac308a5231ea26472a?source=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div>
+関越道 路上で20代男性死亡 路肩に倒れたバイク 他車両の関与含め事故原因を捜査 新潟・小千谷市(ＢＳＮ新潟放送)
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+Yahoo! 地域
+・
+10:29
+
+</div>
+
+</li>
+
+<li>
+
+<a
+href="https://news.yahoo.co.jp/articles/8fb4e75b32bf4dcb1eb3f52b7422abc79c7de6b8?source=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div>
+みちのく最高位と北奥羽名人が囲碁特別対局(陸奥新報)
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+Yahoo! 地域
+・
+10:27
+
+</div>
+
+</li>
+
+<li>
+
+<a
+href="https://news.yahoo.co.jp/articles/a8acb2069a91e45a6783045beedca40fb902ea5a?source=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div>
+「野村克也メモリアル」誕生 ゆかりの地・ワイナリーヒル 遺族ら除幕し祝う(伊豆新聞)
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+Yahoo! 地域
+・
+10:26
+
+</div>
+
+</li>
+
+<li>
+
+<a
+href="https://news.yahoo.co.jp/articles/96ad6ea9dab2c094b10002b5a3a1cea3abaaf3eb?source=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div>
+アルツハイマー病発症リスク因子の蓄積、野菜摂取多いほど進まず／カゴメと弘前大など解析(陸奥新報)
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+Yahoo! 地域
+・
+10:25
+
+</div>
+
+</li>
+
+<li>
+
+<a
+href="https://news.yahoo.co.jp/articles/0fbd3dc170e5ad217a53861e4073811f37a6f2c6?source=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div>
+のぞく青空、見とれて 山形・西蔵王公園展望広場(山形新聞)
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+Yahoo! 地域
+・
+10:24
+
+</div>
+
+</li>
+
+<li>
+
+<a
+href="https://news.yahoo.co.jp/articles/7cfb6a89fa412c7d684b841b59922e0cb9d0547e?source=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div>
+【台風情報】台風31号（インファ）中心気圧940hPa「非常に強い」勢力で最大瞬間風速65m/s、小笠原近海から西へ進み北上する進路予想【雨と風のシミュレーション】(チューリップテレビ)
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+Yahoo! 地域
+・
+10:24
+
+</div>
+
+</li>
+
+</ul>
+
+</div>
+
+<div class="headline-group">
+
+<h3>
+BBC Top
+</h3>
+
+<ul>
+
+<li>
+
+<a
+href="https://www.bbc.co.uk/news/articles/cqkgl4nmp8lyo?at_medium=RSS&amp;at_campaign=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div class="bbc-ja">
+ジャージー島空港でドローン目撃による運航混乱が2夜連続で発生
+</div>
+
+<div class="bbc-en">
+Second night of drone disruption at Jersey Airport
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+BBC Top
+・
+10:52
+
+</div>
+
+</li>
+
+<li>
+
+<a
+href="https://www.bbc.co.uk/sport/formula1/articles/c6reyl8zp3jwo?at_medium=RSS&amp;at_campaign=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div class="bbc-ja">
+ハミルトン、フェラーリ移籍後初・3年ぶりのポールポジションを獲得 メキシコGP
+</div>
+
+<div class="bbc-en">
+Hamilton takes first pole for Ferrari at Mexico City Grand Prix
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+BBC Top
+・
+10:37
+
+</div>
+
+</li>
+
+<li>
+
+<a
+href="https://www.bbc.co.uk/news/articles/cje36degrgv5o?at_medium=RSS&amp;at_campaign=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div class="bbc-ja">
+AIバブル崩壊への懸念をあおる、知られざるデータセンター企業の巨額債務
+</div>
+
+<div class="bbc-en">
+These firms you&#x27;ve never heard of are feeding fears the AI bubble could burst
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+BBC Top
+・
+10:37
+
+</div>
+
+</li>
+
+<li>
+
+<a
+href="https://www.bbc.co.uk/news/articles/cx4g1y955plgo?at_medium=RSS&amp;at_campaign=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div class="bbc-ja">
+英国日曜紙の見出し：「首相が国王の期待を裏切る」と「マヤの夜の秘密」
+</div>
+
+<div class="bbc-en">
+The Papers: &#x27;PM lets down the King&#x27; and &#x27;Kenny&#x27;s secret night at Maya&#x27;s&#x27;
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+BBC Top
+・
+10:15
+
+</div>
+
+</li>
+
+</ul>
+
+</div>
+
+<div class="headline-group">
+
+<h3>
+BBC Business
+</h3>
+
+<ul>
+
+<li>
+
+<a
+href="https://www.bbc.co.uk/news/articles/cqj34gnd3n30o?at_medium=RSS&amp;at_campaign=rss"
+target="_blank"
+rel="noopener"
+>
+
+<div class="bbc-ja">
+ドイツで生活費高騰への抗議デモが暴徒化、店舗が略奪を受ける
+</div>
+
+<div class="bbc-en">
+Shops looted as German cost of living protests turn violent
+</div>
+
+</a>
+
+<div class="headline-meta">
+
+BBC Business
+・
+10:59
+
+</div>
+
+</li>
+
+</ul>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<div class="footer">
+
+Yahoo!ニュース・BBCのRSSを取得し、
+Geminiで要約しています
+
+</div>
+
+</main>
+
+</body>
+
+</html>
